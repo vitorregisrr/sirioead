@@ -113,6 +113,36 @@ button, a[role="button"] {
   color: #CF2751;
 }
 
+@font-face {
+  font-family: "Geon Regular";
+  src: url("../fonts/GeonRegular.eot");
+  src: url("../fonts/GeonRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Geon Light";
+  src: url("../fonts/GeonLight.eot");
+  src: url("../fonts/GeonLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Geon Bold";
+  src: url("../fonts/GeonBold.eot");
+  src: url("../fonts/GeonBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Geon Thin";
+  src: url("../fonts/GeonThin.eot");
+  src: url("../fonts/GeonThin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Geon Italic";
+  src: url("../fonts/GeonItalic.eot");
+  src: url("../fonts/GeonItalic.otf") format("opentype");
+}
+
 .owl-carousel.nav-center .owl-nav {
   display: flex;
   justify-content: center;
