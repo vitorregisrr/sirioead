@@ -1,6 +1,6 @@
-#Institucional WEBSITE for Sírio Libanês EAD (front only)
+# Institucional WEBSITE for Sírio Libanês EAD (front only)
 
-##How to run this project locally
+## How to run this project locally
 
 ### Open the terminal and run:
 - "npm install" to install all required dependencies
