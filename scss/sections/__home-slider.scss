@@ -1,0 +1,52 @@
+.home-slider {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    &__item {
+        display: flex;
+        align-items: flex-end;
+        width: 100vw;
+        height: 500px;
+        background-size: cover;
+
+        &__caption {
+            background-color: $color-secondary--darken;
+            opacity: .9;
+            width: 100%;
+            padding: 30px 0;
+
+            &__title {
+                font-family: 'Geon Heavy';
+                font-size: 41px;
+                margin-bottom: 0;
+            }
+
+
+            &__subtitle {
+                font-family: 'Geon Light';
+                font-size: 26px;
+            }
+        }
+    }
+
+    @media screen and (min-width: $bp-LG) {
+        .owl-dots {
+            position: absolute;
+            right: 210px;
+            bottom: 37px;
+
+            .owl-dot {
+                width: 12px;
+                height: 12px;
+                border: 1px solid #fff;
+                margin-right: 6px;
+
+                &.active,
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

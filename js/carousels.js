@@ -2,8 +2,8 @@
     'use strict';
 
     // Home Carousel //
-    const cursosCarousel = $(".owl-carousel.cursos-carousel__carousel");
-    cursosCarousel.owlCarousel({
+    const homeCarousel = $(".owl-carousel.home-slider__carousel");
+    homeCarousel.owlCarousel({
         loop: false,
         margin: 0,
         items: 1,
@@ -17,6 +17,7 @@
         dragEndSpeed: 700,
         smartSpeed: 1e3,
         startPosition: 1,
+        mouseDrag: false,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn'
     });

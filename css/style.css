@@ -54,7 +54,7 @@
 .chevron-right {
   height: 100% !important;
   width: 100% !important;
-  background-image: url(/images/ico/chevron-right.png);
+  background-image: url(../images/icones/chevron-right.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,7 +63,7 @@
 .chevron-left {
   height: 100% !important;
   width: 100% !important;
-  background-image: url(/images/ico/chevron-left.png);
+  background-image: url(../images/icones/chevron-left.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -139,6 +139,12 @@ button, a[role="button"] {
   font-family: "Geon Black";
   src: url("../fonts/GeonBlack.eot");
   src: url("../fonts/GeonBlack.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Geon Heavy";
+  src: url("../fonts/GeonHeavy.eot");
+  src: url("../fonts/GeonHeavy.otf") format("opentype");
 }
 
 @font-face {
@@ -1033,6 +1039,55 @@ button, a[role="button"] {
   border-right: 0.5px solid #F0F0F7;
   border-radius: 5px;
   font-weight: lighter;
+}
+
+.home-slider {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.home-slider__item {
+  display: flex;
+  align-items: flex-end;
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+}
+
+.home-slider__item__caption {
+  background-color: #361747;
+  opacity: .9;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.home-slider__item__caption__title {
+  font-family: 'Geon Heavy';
+  font-size: 41px;
+  margin-bottom: 0;
+}
+
+.home-slider__item__caption__subtitle {
+  font-family: 'Geon Light';
+  font-size: 26px;
+}
+
+@media screen and (min-width: 992px) {
+  .home-slider .owl-dots {
+    position: absolute;
+    right: 210px;
+    bottom: 37px;
+  }
+  .home-slider .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    margin-right: 6px;
+  }
+  .home-slider .owl-dots .owl-dot.active, .home-slider .owl-dots .owl-dot:hover {
+    background-color: #fff;
+  }
 }
 
 body {
