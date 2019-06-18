@@ -1,0 +1,33 @@
+a:visited, a:link, a:hover, a:active{
+    text-decoration: none;
+}
+
+a{
+    color: $mh-color-gray;
+    text-decoration: underline;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: lighter;
+    color: $mh-color-gray;
+
+    li{
+        display: block;
+        font-size: 13px;
+        padding: 2px 0;
+    }
+}
+
+button, a[role="button"]{
+    cursor: pointer !important;
+}
+
+.card-header{
+    padding-top: 20px;
+    background: none;
+    border: none;
+    color: $mh-color-secondary;
+}
