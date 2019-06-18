@@ -1,3 +1,82 @@
-.main-nav{
-    
+.main-nav {
+    width: 100vw;
+    height: auto;
+    background-color: $color-secondary;
+    padding: 30px 0 35px;
+
+    @media screen and (max-width: $bp-LG) {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        @include transition();
+
+        &.active {
+            max-height: 2000px;
+            padding: 30px 0;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        @media screen and (max-width: $bp-LG) {
+            flex-direction: column;
+        }
+
+        &__item {
+            position: relative;
+            color: #fff;
+            font-size: 16px;
+            @include transition();
+
+            &:hover {
+                text-shadow: .5px .5px .25px rgba(255, 255, 255, 0.616);
+            }
+
+            @media screen and (min-width: $bp-LG) {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    height: 32px;
+                    width: 90%;
+                    background-color: $color-secondary--darken;
+                    opacity: 0;
+                    left: 48%;
+                    transform: translateX(-50%);
+                    bottom: -35px;
+                    @include transition();
+                }
+
+                &.active {
+                    font-family: 'Geon Black';
+
+                    &:after {
+                        opacity: .3;
+                    }
+                }
+
+                &:hover {
+                    &:after {
+                        opacity: .15;
+                    }
+                }
+            }
+
+            @media screen and (max-width: $bp-LG) {
+                padding: 15px;
+                text-align: center;
+                
+                &:not(:last-child){
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+                }
+            }
+
+            a {
+                font-weight: inherit;
+                color: inherit;
+            }
+        }
+    }
 }

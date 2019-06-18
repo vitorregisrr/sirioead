@@ -3,81 +3,114 @@
 
 <head>
     <!-- partial:../partials/__head.html -->
-                                                                    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Sírio Libanês - Cursos EAD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sírio Libanês - Cursos EAD</title>
 
-<!-- Vendor JS -->
-<script src="/vendors/js/vendor.bundle.base.js" defer></script>
+    <!-- Vendor JS -->
+    <script src="/vendors/js/vendor.bundle.base.js" defer></script>
 
-<!-- Custom JS -->
-<script src="/js/main.js" defer></script>
-<script src="/js/carousels.js" defer></script>
-<script src="/js/responsivenav.js" defer></script>
-<script src="/js/inputmasks.js" defer></script>
+    <!-- Custom JS -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/carousels.js" defer></script>
+    <script src="/js/responsivenav.js" defer></script>
+    <script src="/js/inputmasks.js" defer></script>
 
-<!-- Vendor CSS -->
-<link rel="stylesheet" href="/vendors/css/vendor.bundle.base.css">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="/vendors/css/vendor.bundle.base.css">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="/css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
 
-<!-- Load FONT AWESOME -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-                                                                    <!-- partial -->
+    <!-- Load FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- partial -->
 </head>
 
 <body class="wow fadeIn">
     <!-- partial:../partials/__mainheader.html -->
-    <nav class="main-header">
-    <div class="main-header__portal-mobile">
-        <h4 class="main-header__portal-mobile__label">Portal do Aluno</h4>
-        <a href="#" class="main-header__portal-mobile__link"><i class="fa fa-chevron-right mr-1 d-inline"
-                aria-hidden="true"></i>Acesse</a>
-    </div>
-
-    <div class="container">
-        <div class="main-header__brand">
-            <a href="/"><img src="../images/brands/sirio.png" class="main-header__brand__img" /></a>
-            <h3 class="main-header__brand__text">Educação a Distância</h3>
+    <header class="main-header">
+        <div class="main-header__portal-mobile">
+            <h4 class="main-header__portal-mobile__label">Portal do Aluno</h4>
+            <a href="#" class="main-header__portal-mobile__link"><i class="fa fa-chevron-right mr-1 d-inline"
+                    aria-hidden="true"></i>Acesse</a>
         </div>
-        <div class="main-header__tools">
-            <div class="main-header__tools__portal">
-                <h4 class="main-header__tools__portal__label">Portal do aluno</h4>
-                <a href="#" class="main-header__tools__portal__link"><i class="fa fa-chevron-right mr-1"
-                        aria-hidden="true"></i>Acesse</a>
-            </div>
-            <div class="main-header__tools__search">
-                <form action="">
-                    <div class="main-header__tools__search__form">
-                        <input type="text" name="searchText" placeholder="Digite aqui">
-                    </div>
-                    <button type="submit" id="main-header__searchBtn" class="main-header__tools__search__lupa">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
 
-    <div class="main-header__tools-mobile">
         <div class="container">
-            <div class="main-header__tools-mobile__search">
-                <input type="text" placeholder="Busca">
+            <div class="main-header__brand">
+                <a href="/"><img src="../images/brands/sirio.png" class="main-header__brand__img" /></a>
+                <h3 class="main-header__brand__text">Educação a Distância</h3>
             </div>
-            <div class="main-header__tools-mobile__toggler">
-                <button id="navbarToggler" class="main-header__tools-mobile__toggler__button">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
+            <div class="main-header__tools">
+                <div class="main-header__tools__portal">
+                    <h4 class="main-header__tools__portal__label">Portal do aluno</h4>
+                    <a href="#" class="main-header__tools__portal__link"><i class="fa fa-chevron-right mr-1"
+                            aria-hidden="true"></i>Acesse</a>
+                </div>
+                <div class="main-header__tools__search">
+                    <form action="">
+                        <div class="main-header__tools__search__form">
+                            <input type="text" name="searchText" placeholder="Digite aqui">
+                        </div>
+                        <button type="submit" id="main-header__searchBtn" class="main-header__tools__search__lupa">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+
+        <div class="main-header__tools-mobile">
+            <div class="container">
+                <div class="main-header__tools-mobile__search">
+                    <input type="text" placeholder="Busca">
+                </div>
+                <div class="main-header__tools-mobile__toggler">
+                    <button id="navbarToggler" class="main-header__tools-mobile__toggler__button">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav id="main-nav" class="main-nav">
+            <div class="container">
+                <ul class="main-nav__list">
+                    <li class="main-nav__list__item active">
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li class="main-nav__list__item">
+                        <a href="#">Sobre o HSL</a>
+                    </li>
+
+                    <li class="main-nav__list__item">
+                        <a href="#">Ensino e Pesquisa</a>
+                    </li>
+
+                    <li class="main-nav__list__item">
+                        <a href="#">Cursos EAD</a>
+                    </li>
+
+                    <li class="main-nav__list__item">
+                        <a href="#">Metodologia EAD</a>
+                    </li>
+
+                    <li class="main-nav__list__item">
+                        <a href="#">Notícias</a>
+                    </li>
+
+                    <li class="main-nav__list__item">
+                        <a href="#">Atendimento</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- partial -->
 
     <main>
@@ -86,10 +119,10 @@
 
     <!-- partial:../partials/__mainfooter.html -->
     <footer class="mainfooter">
-    <div class="container">
+        <div class="container">
 
-    </div>
-</footer>
+        </div>
+    </footer>
     <!-- partial -->
 
 </body>
