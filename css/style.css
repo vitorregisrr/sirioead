@@ -721,12 +721,12 @@ button, a[role="button"] {
 .main-header__tools__search__form {
   max-width: 0;
   overflow: hidden;
-  padding: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  padding-top: 50px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .main-header__tools__search__form input {
@@ -753,6 +753,9 @@ button, a[role="button"] {
   border: none;
   padding: 0px 40px;
   color: #fff;
+  position: relative;
+  top: -50px;
+  right: 0px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -780,15 +783,14 @@ button, a[role="button"] {
 
 .main-header__tools__search:hover .main-header__tools__search__form {
   max-width: 600px;
-  padding: 20px 30px;
-  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .main-header__tools__search:hover .main-header__tools__search__lupa {
   font-size: 23px;
-  position: absolute;
-  right: -5px;
-  top: 40px;
+  right: -170px;
+  top: -40px;
 }
 
 .main-header__tools.active .main-header__tools__portal {

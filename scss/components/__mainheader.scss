@@ -111,8 +111,8 @@
             &__form {
                 max-width: 0;
                 overflow: hidden;
-                padding: 0;
-                @include transition();
+                padding-top: 50px;
+                @include transition(0.4s);
 
                 input {
                     background-color: transparent !important;
@@ -139,6 +139,9 @@
                 border: none;
                 padding: 0px 40px;
                 color: #fff;
+                position: relative;
+                top: -50px;
+                right: 0px;
                 @include transition();
 
                 &:hover {
@@ -157,15 +160,14 @@
 
                 .main-header__tools__search__form {
                     max-width: 600px;
-                    padding: 20px 30px;
-                    padding-top: 50px;
+                    padding-left: 30px;
+                    padding-right: 30px;
                 }
 
                 .main-header__tools__search__lupa {
                     font-size: 23px;
-                    position: absolute;
-                    right: -5px;
-                    top: 40px;
+                    right: -170px;
+                    top: -40px;
                 }
             }
         }
