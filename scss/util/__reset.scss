@@ -3,7 +3,7 @@ a:visited, a:link, a:hover, a:active{
 }
 
 a{
-    color: $mh-color-gray;
+    color: $color-gray;
     text-decoration: underline;
 }
 
@@ -12,7 +12,7 @@ ul{
     padding: 0;
     text-decoration: none;
     font-weight: lighter;
-    color: $mh-color-gray;
+    color: $color-gray;
 
     li{
         display: block;
@@ -29,5 +29,5 @@ button, a[role="button"]{
     padding-top: 20px;
     background: none;
     border: none;
-    color: $mh-color-secondary;
+    color: $color-secondary;
 }
