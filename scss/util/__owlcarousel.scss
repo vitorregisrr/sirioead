@@ -19,8 +19,8 @@
                 position: absolute;
                 color: $color-primary !important;
                 font-size: 40px !important;
-                width: 90px;
-                height: 70px;
+                width: 110px;
+                height: 90px;
                 opacity: 0.8;
                 text-align: center;
                 @include transition();
@@ -37,39 +37,22 @@
                 }
 
                 @media screen and(max-width: $bp-SM) {
-                    width: 50px;
-                    height: 30px;
+                    width: 60px;
+                    height: 50px;
                 }
             }
 
             .owl-prev {
-                left: -13%;
+                left: 3%;
             }
 
             .owl-next {
-                right: -13%;
-            }
-
-            @media screen and(max-width: $bp-MD){
-                .owl-prev {
-                    left: -17%;
-                }
-    
-                .owl-next {
-                    right: -17%;
-                }
+                right: 3%;
             }
 
             @media screen and(max-width: $bp-SM){
                 height: auto;
         
-                .owl-prev {
-                    left: -4%;
-                }
-    
-                .owl-next {
-                    right: -4%;
-                }
             }
         }
     }

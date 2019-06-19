@@ -94,6 +94,7 @@
             &__link {
                 font-size: 14px;
                 font-family: 'Geon Medium';
+                color: #fff;
                 @include transition();
 
                 &:hover {
@@ -196,6 +197,11 @@
             background-color: #220930;
             padding: 18px 50px;
             font-size: 15px;
+            color: #fff;
+
+            &:hover{
+                color: rgb(233, 233, 233);
+            }
         }
 
         @media screen and (max-width: $bp-LG) {
