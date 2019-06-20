@@ -41,6 +41,11 @@
                     max-width: 70%;
                     display: inline-block;
                 }
+
+                @media screen and (max-width: $bp-SM){
+                    max-width: 80%;
+                    display: inline-block;
+                }
             }
         }
     }
@@ -69,7 +74,7 @@
 
         }
         @media screen and (max-width: $bp-MD) {
-            bottom: 200px;
+            bottom: 45%;
             right: 50%;
             transform: translateX(50%);
         }

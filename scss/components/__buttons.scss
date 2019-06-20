@@ -23,9 +23,31 @@
             color: $color-primary !important;
             border: 1px solid $color-primary;
 
-            &:hover{
+            &:hover, &.active{
                 color: #fff !important;
                 background-color: $color-primary;
+            }
+        }
+    }
+
+    &-white {
+        background-color: #fff;
+        color: $color-primary !important;
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: darken(#fff, 10) !important;
+        }
+
+        &--outline{
+            background-color: transparent;
+            color: #fff !important;
+            border: 1px solid #fff;
+
+            &:hover, &.active{
+                color: $color-primary !important;
+                background-color: #fff;
             }
         }
     }
@@ -46,9 +68,26 @@
     }
 
     &.btn-lg{
-        padding: 20px 70px;
+        padding: 20px 30px;
         font-size: 20px;
         font-family: 'Geon Bold';
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 18px;
+            padding: 15px 20px;
+        }
+    }
+
+    &.btn-md{
+        padding: 10px 35px;
+        font-size: 18px;
+    }
+
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+        outline: none;
     }
 }
 
