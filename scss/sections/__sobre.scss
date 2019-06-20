@@ -57,7 +57,7 @@
                 height: 530px;
             }
 
-            @media screen and (max-width: 420px){
+            @media screen and (max-width: 420px) {
                 height: 800px;
             }
         }
@@ -133,7 +133,7 @@
                     color: #fff;
                 }
 
-                @media screen and (max-width: $bp-SM){
+                @media screen and (max-width: $bp-SM) {
                     padding-right: 20px;
                 }
             }
@@ -203,6 +203,30 @@
 
             @media screen and (min-width: $bp-SM) {
                 margin-right: 20px;
+            }
+        }
+    }
+
+    &--nolink {
+        .sobre__servicos {
+            @media screen and (min-width: 1370px) {
+                height: 450px;
+            }
+
+            @media screen and (max-width: $bp-LG) {
+                padding-bottom: 0;
+            }
+
+            &__caption__desc {
+                min-height: none !important;
+                max-height: none !important;
+            }
+        }
+
+        .sobre__content {
+            &::before {
+                height: 800px !important;
+                border-bottom: none;
             }
         }
     }

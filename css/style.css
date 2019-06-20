@@ -1965,6 +1965,28 @@ button, a[role="button"] {
   }
 }
 
+@media screen and (min-width: 1370px) {
+  .sobre--nolink .sobre__servicos {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sobre--nolink .sobre__servicos {
+    padding-bottom: 0;
+  }
+}
+
+.sobre--nolink .sobre__servicos__caption__desc {
+  min-height: none !important;
+  max-height: none !important;
+}
+
+.sobre--nolink .sobre__content::before {
+  height: 800px !important;
+  border-bottom: none;
+}
+
 .page-banner {
   height: 260px;
   padding: 20px 0;
