@@ -67,6 +67,25 @@
     margin-right: 3px;
 }
 
+.chevron-up {
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url(../images/icones/chevron-up.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-question{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/icones/question.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 3px;
+}
+
 .img-70{
     width: 70px;
     height: 70px;

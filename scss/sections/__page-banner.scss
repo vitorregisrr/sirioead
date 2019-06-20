@@ -1,0 +1,12 @@
+.page-banner{
+    height: 260px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-size: cover;
+    
+    &__title{
+        font-family: 'Geon Heavy';
+    }
+}
