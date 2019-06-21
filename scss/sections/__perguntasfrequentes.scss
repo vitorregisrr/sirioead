@@ -1,0 +1,139 @@
+.perguntasfrequentes{
+    color: #361747;
+    
+    &__title{
+        font-family: 38px;
+        font-family: 'Geon Heavy';
+        color: #361747;
+        margin-bottom: 20px;
+    }
+    
+    &__pergunta{
+        padding: 30px 0 40px 130px;
+        border-bottom: 1px solid $color-primary;
+        font-size: 18px;
+        letter-spacing: 0.4px;
+
+        @media screen and (max-width: $bp-SM){
+            padding-left: 80px;
+        }
+        
+        &__title{
+            font-weight: bold;
+            max-width: 85%;
+
+            @media screen and (max-width: $bp-MD){
+                max-width: 100%;
+            }
+            
+            button{
+                position: relative;
+                background-color: transparent;
+                border: none !important;
+                outline: none !important;
+                text-align: left;
+                font-size: 18px;
+                line-height: 25px;
+                padding: 0;
+                color: #361747;
+
+                &[aria-expanded="false"]{
+                    font-weight: bold;
+                    
+                    &:after{
+                        transform: rotate(0);
+                    }
+                }
+
+                &:after{
+                    content: '\f054';
+                    font-family: FontAwesome;
+                    color: $color-primary;
+                    font-size: 30px;
+                    position: absolute;
+                    left: -65px;
+                    top: 10px;
+                    transform: rotate(90deg);
+                    @include transition();
+                }
+            }
+        }
+        
+        &__resposta{
+            padding-top: 10px;
+            color: #361747;
+            max-width: 85%;
+
+            @media screen and (max-width: $bp-MD){
+                max-width: 100%;
+            }
+        }
+    }
+    
+    &__loadmore{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 50px 0;
+        font-family: 'Geon Bold';
+        font-size: 20px;
+        color: $color-primary;
+        text-align: right;
+        @include transition();
+        
+        &:hover{
+            color: $color-secondary--darken;
+        }
+
+        i.fa{
+            position: relative;
+            font-size: 25px;
+            &:after{
+                position: absolute;
+                top: 6.2px;
+                left: 0px;
+                content: '...';
+                letter-spacing: 2.7px;
+                font-size: 18px;
+                line-height: 0;
+                color: #fff;
+            }
+        }
+    }
+    
+    &__links{
+        padding: 40px 0;
+        background-color: #b672af;
+      
+        .container{
+            display: flex;
+
+            @media screen and (max-width: $bp-LG){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__item{
+            font-size: 20px;
+            font-family: 'Geon Bold';
+            color: #361747;
+            margin-right: 20px;
+            @include transition();
+            
+            &:hover{
+                color: $color-secondary--darken;
+            }
+            i.fa{
+                font-size: 35px;
+            }
+
+            @media screen and (max-width: $bp-LG){
+                &:first-child{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

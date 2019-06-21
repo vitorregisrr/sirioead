@@ -1,0 +1,120 @@
+.ensinoepesquisa{
+
+    &__caption{
+        position: relative;
+        margin-top: 120px;
+        border-left: 2px solid #361747;
+        border-bottom: 2px solid #361747;
+        padding: 0 50px;
+        padding-bottom: 40px;
+
+        &__link{
+            font-size: 19px;
+            position: absolute;
+            right: 0;
+            bottom: -13px;
+            background-color: #fff;
+            padding-left: 30px;
+            color: $color-primary;
+            font-family: 'Geon Medium';
+            @include transition();
+
+            &:hover{
+                color: $color-secondary--darken;
+            }
+        }
+
+        &__desc{
+            font-size: 18px;
+            color: #361747;
+        }
+        
+        &__atividades{
+            margin-top: 50px;
+            
+            &__title{
+                font-size: 28px;
+                font-family: 'Geon Bold';
+                margin-bottom: 10px;
+                color: #361747;
+            }
+
+            &__list{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                @media screen and (max-width: $bp-MD){
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                &__item{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 60px;
+
+                    .number{
+                        font-size: 45px;
+                        font-family: 'Geon Bold';
+                        margin-right: 8px;
+                        color: #361747;
+                    }
+
+                    .label{
+                        font-size: 16px;
+                        line-height: 18px;
+                        max-width: 740px;
+                        color: #361747;
+                    }
+                }
+            }
+        }
+    }
+
+    &__banner{
+        margin-top: 70px;
+        background-color: $color-rose;
+        padding-top: 0;
+
+        &__img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__links{
+            padding: 50px 0;
+          
+            .container{
+                display: flex;
+
+                @media screen and (max-width: $bp-LG){
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            &__item{
+                font-size: 20px;
+                font-family: 'Geon Bold';
+                color: #361747;
+                margin-right: 20px;
+                @include transition();
+                
+                &:hover{
+                    color: $color-secondary--darken;
+                }
+                i.fa{
+                    font-size: 35px;
+                }
+
+                @media screen and (max-width: $bp-LG){
+                    &:first-child{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
