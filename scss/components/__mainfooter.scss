@@ -28,7 +28,7 @@
                 border-right: 1px solid $color-primary;
                 padding-right: 30px;
 
-                @media screen and (max-width: $bp-LG) {
+                @media screen and (max-width: $bp-MD) {
                     border-bottom: 1px solid $color-primary;
                     padding-bottom: 30px;
                     border-right: none;
@@ -42,7 +42,7 @@
             height: 95px;
             margin: 0 50px;
 
-            @media screen and (max-width: $bp-LG) {
+            @media screen and (max-width: $bp-MD) {
                 margin: 30px 0;
             }
 
@@ -57,7 +57,7 @@
             display: flex;
             margin-left: 30px;
 
-            @media screen and (max-width: $bp-LG) {
+            @media screen and (max-width: $bp-MD) {
                 margin: 0;
             }
 

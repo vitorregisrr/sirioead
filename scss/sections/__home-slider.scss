@@ -61,18 +61,6 @@
         right: 210px;
         bottom: 37px;
 
-        .owl-dot {
-            width: 12px;
-            height: 12px;
-            border: 1px solid #fff;
-            margin-right: 6px;
-
-            &.active,
-            &:hover {
-                background-color: #fff;
-            }
-
-        }
         @media screen and (max-width: $bp-MD) {
             bottom: 45%;
             right: 50%;

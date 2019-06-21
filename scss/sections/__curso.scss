@@ -1,0 +1,214 @@
+.curso {
+    &__carousel {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+        div.owl-nav{
+            top: 220px !important;
+
+            @media screen and (max-width: $bp-LG){
+                top: 180px !important;
+            }
+        }
+
+
+        .owl-dots{
+            position: absolute;
+            top: 410px;
+            left: 53%;
+
+            @media screen and (min-width: $bp-MD) and (max-width: $bp-LG){
+                top: 360px;
+                left: 46%;
+            }
+
+            @media screen and (min-width: $bp-SM) and (max-width: $bp-MD){
+                top: 360px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                left: 45%;
+            }
+ 
+            @media screen and (max-width: $bp-SM){
+                top: 360px;
+                left: 38%;
+            }
+        }
+
+        &__item {
+            height: auto;
+
+            &__top {
+                height: 450px;
+                width: 100%;
+                display: flex;
+
+                @media screen and (max-width: $bp-LG){
+                    flex-direction: column;
+                    height: auto;
+                }
+
+                &__img {
+                    width: 62%;
+                    display: flex;
+                    align-items: flex-end;
+                    background-size: cover;
+                    padding-left: 10vw;
+                    position: relative;
+
+                    @media screen and (max-width: $bp-LG){
+                        height: 400px;
+                        width: 100%;
+                        justify-content: center;
+                        text-align: center;
+                        padding: 0 20px;
+                    }
+
+                    &__title {
+                        font-family: 'Geon Bold';
+                        font-size: 50px;
+                        line-height: 0.9;
+                        letter-spacing: 2px;
+                        color: #fff;
+                        margin-bottom: 18px;
+
+                        @media screen and (max-width: $bp-LG){
+                            font-size: 40px;
+                            padding-bottom: 40px;
+                        }
+
+                        @media screen and (min-width: $bp-LG){
+                            max-width: 86%;
+                        }
+
+                        @media screen and (min-width: $bp-XL){
+                            max-width: 70%;
+                        }
+
+                    }
+                }
+
+                &__info {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    width: 38%;
+                    background-color: #cea5cd;
+                    padding-left: 50px;
+
+                    @media screen and (max-width: $bp-LG){
+                        width: 100%;
+                        padding: 40px 10vw;
+                        justify-content: center;
+                        padding-bottom: 80px;
+                    }
+
+                    @media screen and (max-width: $bp-SM){
+                        padding-bottom: 50px;
+                    }
+
+                    &__list {
+                        display: flex;
+                        flex-direction: column;
+
+                        @media screen and (min-width: $bp-SM) and (max-width: $bp-LG){
+                            flex-direction: row;
+                        }
+
+                        @media screen and (max-width: $bp-LG){
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        &__item {
+                            display: flex;
+                            color: #361747;
+                            max-width: 80%;
+
+                            @media screen and (max-width: $bp-LG){
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                max-width: 50%;
+                                margin-bottom: 15px;
+                            }
+                            
+                            @media screen and (min-width: $bp-SM) and (max-width: $bp-LG){
+                                margin-right: 30px;
+                                margin-bottom: 0;
+                            }
+
+                            @media screen and (min-width: $bp-LG){
+                                margin-bottom: 30px;
+                            }
+
+                            &__icon{
+                                margin-bottom: 10px;
+
+                                @media screen and (min-width: $bp-LG){
+                                    margin-right: 15px;
+                                }
+                            }
+
+                            &__label {
+                                font-family: 'Geon Bold';
+                                font-size: 18px;
+
+                                span {
+                                    display: block;
+                                    font-size: 21px;
+                                    line-height: 0.9;
+                                    text-transform: uppercase;
+                                    font-family: 'Geon Light';
+                                }
+                            }
+                        }
+                    }
+
+                    &__button{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        font-family: 'Geon Heavy';
+                        font-size: 22px;
+                        width: 70%;
+                        background-color: $color-primary;
+                        border: none;
+                        color: #fff !important;
+                        padding: 10px;
+                        text-align: center;
+                        @include transition();
+
+                        @media screen and (max-width: $bp-LG){
+                            width: 100%;
+                        }
+
+                        &:hover{
+                            background-color: darken($color-primary, 10);
+                        }
+                    }
+                }
+            }
+
+            &__caption{
+                height: auto;
+                background-color: #361747;
+                padding: 40px 10vw;
+                
+                &__desc{
+                    font-size: 18px;
+                    letter-spacing: 0.8px;
+                    margin-bottom: 0;
+
+                    @media screen and (max-width: $bp-LG){
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
