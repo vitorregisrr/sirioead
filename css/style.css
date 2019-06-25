@@ -3255,7 +3255,7 @@ button, a[role="button"] {
 @media screen and (max-width: 992px) {
   .curso__autores.v3 .curso__autores__content {
     border-left: none;
-    padding: 10px 10px;
+    padding: 10px 20px;
   }
 }
 
