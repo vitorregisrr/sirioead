@@ -2,23 +2,6 @@
     padding: 50px 0;
 }
 
-.inner-title {
-    @include title();
-    color: #839097;
-
-    @media screen and(max-width: $bp-MD){
-        font-size: 30px;
-        line-height: 32px;
-    }
-}
-
-.inner-desc {
-    letter-spacing: 0.2px;
-    text-align: center;
-    color: rgb(173, 173, 173);
-    font-size: 18px;
-}
-
 .color-primary {
     color: $color-primary !important;
 }
@@ -33,6 +16,14 @@
 
 .color-gray {
     color: $color-gray !important;
+}
+
+.color-dark {
+    color: #361747 !important;
+}
+
+.text-black {
+    font-family: 'Geon Black' !important;
 }
 
 .border-light {
@@ -57,7 +48,7 @@
     background-position: center;
 }
 
-.icon-clock{
+.icon-clock {
     display: inline-block;
     width: 28px;
     height: 28px;
@@ -67,7 +58,7 @@
     margin-right: 3px;
 }
 
-.icon-clock2{
+.icon-clock2 {
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -77,7 +68,7 @@
     margin-right: 3px;
 }
 
-.icon-dollar{
+.icon-dollar {
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -87,7 +78,7 @@
     margin-right: 3px;
 }
 
-.icon-calendar{
+.icon-calendar {
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -106,7 +97,7 @@
     background-position: center;
 }
 
-.icon-question{
+.icon-question {
     display: inline-block;
     width: 28px;
     height: 28px;
@@ -116,16 +107,34 @@
     margin-right: 3px;
 }
 
-.img-70{
+.img-70 {
     width: 70px;
     height: 70px;
     object-fit: cover;
 }
 
-.circle{
+.circle {
     border-radius: 50%;
 }
 
-main{
+main {
     min-height: 50vh;
+}
+
+.list--disc {
+
+    list-style: disc;
+
+    li {
+        display: list-item;
+        font-family: 'Geon Light';
+        letter-spacing: 0.8px;
+        font-size: 27px;
+        line-height: 25px;
+
+        span {
+            font-size: 17px;
+        }
+    }
+
 }

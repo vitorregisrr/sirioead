@@ -8,6 +8,7 @@
         border-left: 2px solid #361747;
         padding: 0 40px 20px;
         margin-left: 130px;
+        color: #361747;
         
         @media screen and (max-width: $bp-LG) {
             margin-left: 30px;
@@ -19,23 +20,49 @@
 
         &.dark{
             background-color: #361747;
+            color: #fff;
+            border-left: none;
+            margin: 0 !important;
+            padding-top: 70px;
+            padding-left: 230px;
+
+            @media screen and (max-width: $bp-LG) {
+                padding-left: 80px;
+                padding-top: 40px;
+            }
+
+            @media screen and (max-width: $bp-SM){
+                padding-left: 40px;
+            }
+    
+            @media screen and (min-width: 1800px){
+                padding-left: 300px;
+            }
         }
+        
         &__desc {
             font-family: 'Geon Regular';
-            color: #361747;
             letter-spacing: 0.5px;
             line-height: 1.5;
             font-size: 21px;
             padding-right: 100px;
+            color: inherit;
 
-            @media screen and (max-width: $bp-LG){
+            @media screen and (max-width: 1850px){
                 padding-right: 0;
+                font-size: 19px;
             }
+        
+        }
+
+        &__title{
+            font-family: 'Geon Bold';
+            font-size: 35px;
         }
 
         &__item {
             font-family: 'Geon Bold';
-            color: #361747;
+            color: inherit;
             font-size: 20px;
             margin-bottom: 20px;
 
@@ -44,7 +71,7 @@
             }
 
             i {
-                font-size: 40px;
+                font-size: 33px;
             }
 
             .tel {
@@ -73,7 +100,7 @@
 
     &__img {
         width: 100%;
-        height: 450px;
+        height: 560px;
 
         @media screen and (min-width: 2400px){
             height: 500px;
@@ -83,6 +110,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            height: 270px
         }
     }
 
@@ -96,7 +127,7 @@
         background-color: #361747;
 
         @media screen and (max-width: $bp-MD){
-            padding: 120px 30px 30px;
+            padding: 50px 30px 30px;
         }
 
         @media screen and (min-width: 1800px){
@@ -148,7 +179,7 @@
             border-radius: 0;
             border: 1px solid black;
             background-color: #fff;
-            height: 54px;
+            height: 47px;
             margin-bottom: 20px;
 
             &:focus {
@@ -159,42 +190,6 @@
 
         textarea.form-control {
             height: 150px;
-        }
-    }
-
-    &__links{
-        padding: 40px 0;
-        background-color: #c47fb5;
-      
-        .container{
-            display: flex;
-
-            @media screen and (max-width: $bp-LG){
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-
-        &__item{
-            font-size: 20px;
-            font-family: 'Geon Bold';
-            color: #361747;
-            margin-right: 20px;
-            @include transition();
-            
-            &:hover{
-                color: $color-secondary--darken;
-            }
-            i.fa{
-                font-size: 35px;
-            }
-
-            @media screen and (max-width: $bp-LG){
-                &:first-child{
-                    margin-bottom: 20px;
-                }
-            }
         }
     }
 }

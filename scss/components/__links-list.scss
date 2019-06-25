@@ -1,0 +1,37 @@
+.links-list {
+    padding: 40px 0;
+
+    &.pink {
+        background-color: #c47fb5;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    &__item {
+        font-size: 20px;
+        font-family: 'Geon Bold';
+        color: #361747;
+        margin-right: 20px;
+        @include transition();
+
+        &:hover {
+            color: $color-secondary--darken;
+        }
+
+        i.fa {
+            font-size: 35px;
+        }
+
+        @media screen and (max-width: $bp-LG) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            text-align: center;
+        
+        }
+    }
+}

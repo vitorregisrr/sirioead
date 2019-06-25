@@ -36,4 +36,34 @@
         }, '300');
     });
 
+
+    // Smooth Scroll
+    $("a").on('click', function (event) {
+        if (this.hash !== "" && $(`a[href="${this.hash}"`).attr('href')[0] === '#') {
+            event.preventDefault();
+
+            const offset = this.hash == '#investimento' ? 160 : 0;
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - offset
+            }, 800, function () {});
+
+        }
+    });
+
+
+    // Curso accordion
+
+    $('.curso__navAccordion__content').each(function (index, elem) {
+        const targetSelector =  elem.getAttribute('data-cursoContent');
+        const targetContent = document.querySelector(targetSelector);
+
+        if( targetContent ){
+            let newContent = document.createElement('div');
+            newContent.setAttribute('class', targetContent.getAttribute('class'));
+            newContent.innerHTML = targetContent.innerHTML;
+            elem.append(newContent);
+        }
+    });
+
 })();

@@ -167,24 +167,22 @@
     &__links {
         position: relative;
         background-color: #c782b7;
-        padding: 40px 0;
-        padding-left: 13vw;
-        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+        padding-left: 80px;
+        z-index: 4;
 
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            @media screen and (max-width: $bp-SM) {
-                flex-direction: column;
-            }
+        @media screen and (max-width: $bp-SM) {
+            flex-direction: column;
+            padding-left: 0;
+        }
 
 
-            @media screen and (min-width: 1800px) {
-                justify-content: flex-end;
-                padding-right: 40px;
-            }
+        @media screen and (min-width: 1800px) {
+            justify-content: flex-end;
+            padding-right: 40px;
         }
 
         &__item {

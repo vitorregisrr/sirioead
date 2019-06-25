@@ -21,6 +21,11 @@
             width: 300px;
             height: 105px;
 
+            @media screen and (max-width: $bp-MD) {
+                display: flex;
+                justify-content: center;
+            }
+            
             img {
                 height: 100%;
                 width: 100%;
@@ -31,6 +36,8 @@
                 @media screen and (max-width: $bp-MD) {
                     border-bottom: 1px solid $color-primary;
                     padding-bottom: 30px;
+                    padding-right: 0;
+                    width: 80%;
                     border-right: none;
                 }
 
