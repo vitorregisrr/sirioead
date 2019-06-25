@@ -7,6 +7,10 @@
 
     .container {
         display: flex;
+
+        @media screen and (max-width: $bp-LG){
+            justify-content: center;
+        }
     }
 
     &__item {

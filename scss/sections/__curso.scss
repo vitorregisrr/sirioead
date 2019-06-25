@@ -9,7 +9,6 @@
     &__navAccordion {
         width: 100%;
         display: none;
-
         @media screen and (max-width: $bp-LG) {
             display: block;
 
@@ -21,7 +20,6 @@
         }
 
         &__item {
-            
             &:not(:last-child) {
                 border-bottom: 1px solid #634872;
             }
@@ -36,8 +34,6 @@
                     padding: 25px 0;
                     font-size: 19px;
                     @include transition();
-
-
                     &:focus {
                         outline: none;
                     }
@@ -59,7 +55,6 @@
 
         div.owl-nav {
             top: 220px !important;
-
             @media screen and (max-width: $bp-LG) {
                 top: 180px !important;
             }
@@ -69,7 +64,6 @@
             position: absolute;
             top: 410px;
             left: 53%;
-
             @media screen and (max-width: $bp-LG) {
                 top: 360px;
                 left: 0;
@@ -78,11 +72,9 @@
                 justify-content: center;
                 align-items: center;
             }
-
             @media screen and (min-width: $bp-SM) and (max-width: $bp-MD) {
                 top: 360px;
             }
-
             @media screen and (max-width: $bp-SM) {
                 top: 360px;
             }
@@ -95,7 +87,6 @@
                 height: 450px;
                 width: 100%;
                 display: flex;
-
                 @media screen and (max-width: $bp-LG) {
                     flex-direction: column;
                     height: auto;
@@ -108,7 +99,6 @@
                     background-size: cover;
                     padding-left: 10vw;
                     position: relative;
-
                     @media screen and (max-width: $bp-LG) {
                         height: 400px;
                         width: 100%;
@@ -124,16 +114,13 @@
                         letter-spacing: 2px;
                         color: #fff;
                         margin-bottom: 18px;
-
                         @media screen and (max-width: $bp-LG) {
                             font-size: 40px;
                             padding-bottom: 40px;
                         }
-
                         @media screen and (min-width: $bp-LG) {
                             max-width: 86%;
                         }
-
                         @media screen and (min-width: $bp-XL) {
                             max-width: 70%;
                         }
@@ -148,14 +135,12 @@
                     width: 38%;
                     background-color: #cea5cd;
                     padding-left: 50px;
-
                     @media screen and (max-width: $bp-LG) {
                         width: 100%;
                         padding: 40px 10vw;
                         justify-content: center;
                         padding-bottom: 80px;
                     }
-
                     @media screen and (max-width: $bp-SM) {
                         padding-bottom: 70px;
                         padding-left: 0;
@@ -164,11 +149,9 @@
                     &__list {
                         display: flex;
                         flex-direction: column;
-
                         @media screen and (min-width: $bp-SM) and (max-width: $bp-LG) {
                             flex-direction: row;
                         }
-
                         @media screen and (max-width: $bp-LG) {
                             justify-content: center;
                             align-items: center;
@@ -178,7 +161,6 @@
                             display: flex;
                             color: #361747;
                             max-width: 80%;
-
                             @media screen and (max-width: $bp-LG) {
                                 flex-direction: column;
                                 justify-content: center;
@@ -187,19 +169,16 @@
                                 max-width: 50%;
                                 margin-bottom: 15px;
                             }
-
                             @media screen and (min-width: $bp-SM) and (max-width: $bp-LG) {
                                 margin-right: 30px;
                                 margin-bottom: 0;
                             }
-
                             @media screen and (min-width: $bp-LG) {
                                 margin-bottom: 30px;
                             }
 
                             &__icon {
                                 margin-bottom: 10px;
-
                                 @media screen and (min-width: $bp-LG) {
                                     margin-right: 15px;
                                 }
@@ -233,11 +212,9 @@
                         padding: 10px;
                         text-align: center;
                         @include transition();
-
                         @media screen and (max-width: $bp-LG) {
                             width: 100%;
                         }
-
                         &:hover {
                             background-color: darken($color-primary, 10);
                         }
@@ -254,7 +231,6 @@
                     font-size: 18px;
                     letter-spacing: 0.8px;
                     margin-bottom: 0;
-
                     @media screen and (max-width: $bp-LG) {
                         text-align: center;
                     }
@@ -263,14 +239,34 @@
         }
     }
 
+    &__publico {
+        background-color: #cea5cd;
+        padding-top: 40px;
+        @media screen and (max-width: $bp-LG) {
+            padding: 20px 0 10px;
+        }
+
+        &__content {
+            border-left: 2.5px solid #361747;
+            padding-left: 40px;
+            padding-bottom: 20px;
+            @media screen and (max-width: $bp-LG) {
+                border-left: none;
+                padding: 0;
+            }
+        }
+
+        .inner-desc.text-black {
+            font-size: 16px !important;
+        }
+    }
+
     &__objetivos {
         position: relative;
         background-color: #a25da5;
         overflow: hidden;
         padding-top: 60px;
-
-        
-        @media screen and (max-width: $bp-LG){
+        @media screen and (max-width: $bp-LG) {
             border-left: none;
             padding: 20px;
         }
@@ -286,9 +282,8 @@
             background-image: url("../images/backgrounds/dots-right.png");
             background-size: contain;
             background-repeat: no-repeat;
-            opacity: .6;
+            opacity: 0.6;
             pointer-events: none;
-
             @media screen and (max-width: $bp-MD) {
                 right: -120%;
             }
@@ -298,8 +293,7 @@
             border-left: 2.5px solid #361747;
             padding-left: 40px;
             padding-bottom: 40px;
-
-            @media screen and (max-width: $bp-LG){
+            @media screen and (max-width: $bp-LG) {
                 border-left: none;
                 padding: 0;
             }
@@ -315,6 +309,28 @@
                 }
             }
         }
+
+        &.v3 {
+            background-color: transparent;
+            padding-top: 0;
+
+            .curso__objetivos {
+                &__content {
+                    padding-top: 40px;
+                }
+
+                &__list {
+                    li {
+                        margin-bottom: 10px;
+
+                        span {
+                            color: #361747;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 
     &__programas {
@@ -323,8 +339,7 @@
         &__content {
             border-left: 2.5px solid #361747;
             padding: 60px 0 60px 40px;
-
-            @media screen and (max-width: $bp-LG){
+            @media screen and (max-width: $bp-LG) {
                 border-left: none;
                 padding: 20px;
             }
@@ -351,12 +366,10 @@
 
                     &[aria-expanded="false"] {
                         font-weight: bold;
-
                         &:after {
                             transform: rotate(0);
                         }
                     }
-
                     &:after {
                         content: '\f054';
                         font-family: FontAwesome;
@@ -370,6 +383,76 @@
                 }
             }
         }
+
+        &.v3 {
+            position: relative;
+            background-color: #b16dac;
+            overflow: hidden;
+
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                height: 1200px;
+                width: 900px;
+                right: 0;
+                top: -400px;
+                background-image: url("../images/backgrounds/dots-right.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                opacity: 0.6;
+                pointer-events: none;
+                @media screen and (max-width: $bp-MD) {
+                    right: -120%;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                height: 1200px;
+                width: 900px;
+                left: 0;
+                top: -400px;
+                background-image: url("../images/backgrounds/dots-left.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                opacity: 0.6;
+                pointer-events: none;
+                @media screen and (max-width: $bp-MD) {
+                    left: -120%;
+                }
+            }
+
+            .curso__programas {
+
+                &__list {
+                    color: #361747;
+
+                    span {
+                        color: #fff;
+                    }
+                }
+
+                &__unidade {
+                    margin-bottom: 30px;
+
+                    &__content {
+                        padding-top: 15px;
+                    }
+
+                    &__title {
+                        button {
+                            color: #fff;
+                            &:after {
+                                color: #361747;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .perfil-autores--wraper {
@@ -379,7 +462,6 @@
     }
 
     &__perfil-aluno {
-
         @media screen and (max-width: $bp-LG) {
             .container {
                 padding: 0 !important;
@@ -392,10 +474,13 @@
             padding: 40px 60px;
             background-color: #361747;
             color: #fff;
-
             @media screen and (max-width: $bp-SM) {
                 padding: 40px 30px;
             }
+        }
+
+        &.v3 {
+            background-color: #b26dad;
         }
     }
 
@@ -409,17 +494,17 @@
 
         @media screen and (max-width: $bp-LG) {
             padding: 0 !important;
-
+            
             &__content {
-                padding: 40px 10px;
+                padding: 10px 10px;
             }
 
             .container {
                 padding: 0 !important;
                 margin: 0 !important;
+                max-width: none !important;
             }
         }
-
         @media screen and (max-width: $bp-SM) {
             padding: 40px 30px;
         }
@@ -428,6 +513,22 @@
             font-family: 'Geon Bold';
             font-size: 35px;
             color: #361747;
+        }
+
+        &.v3 {
+            background-color: #cea5cd;
+            padding-top: 0;
+            
+            .curso__autores__content {
+                border-left: 2.5px solid #361747;
+                padding-left: 40px;
+                padding-bottom: 20px;
+
+                @media screen and (max-width: $bp-LG) {
+                    border-left: none;
+                    padding: 10px 10px;
+                }
+            }
         }
 
         &__autor {
@@ -441,7 +542,6 @@
                 justify-content: flex-start;
                 align-items: flex-start;
             }
-
             @media screen and (max-width: $bp-MD) {
                 flex-direction: column;
                 justify-content: center;
@@ -454,27 +554,23 @@
                 align-items: center;
                 justify-content: center;
 
-
                 img {
                     width: 150px;
                     height: 150px;
                     border-radius: 50%;
                     margin-right: 30px;
-
                     @media screen and (max-width: $bp-LG) {
                         margin-right: 20px;
                     }
-
                     @media screen and (max-width: $bp-MD) {
                         margin-right: 0 !important;
-                        margin-bottom: 15px;
+                        margin-bottom: 15px !important;
                     }
                 }
             }
 
             &__caption {
                 width: 80%;
-
                 @media screen and (max-width: $bp-MD) {
                     text-align: center;
                 }
@@ -486,10 +582,12 @@
 
                 &__desc {
                     font-size: 18px;
-                    letter-spacing: .8px;
+                    letter-spacing: 0.8px;
                     font-family: 'Geon Light';
                     margin-bottom: 0;
                 }
+
+                &__list {}
             }
         }
     }
@@ -497,7 +595,6 @@
     &__investimento {
         padding: 70px 0;
         color: #361747;
-
         @media screen and (max-width: $bp-LG) {
             padding: 30px 0;
         }
@@ -508,7 +605,6 @@
             text-align: center;
             font-size: 23px;
             line-height: 0;
-
             @media screen and (max-width: $bp-LG) {
                 padding: 40px 0;
                 text-align: left;
@@ -519,7 +615,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
             @media screen and (max-width: $bp-LG) {
                 justify-content: flex-start;
             }
@@ -546,7 +641,6 @@
                 transition: inherit;
                 color: #361747;
             }
-
             &:hover {
                 background-color: #361747;
                 @include scale(1.03);
@@ -563,7 +657,6 @@
         font-size: 40px;
         letter-spacing: 0.3px;
         color: #fff;
-
         @media screen and (max-width: $bp-LG) {
             display: none;
         }
