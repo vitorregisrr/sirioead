@@ -1188,6 +1188,7 @@ button, a[role="button"] {
 @media screen and (max-width: 992px) {
   .main-nav__list {
     flex-direction: column;
+    padding-left: 0;
   }
 }
 

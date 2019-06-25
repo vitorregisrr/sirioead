@@ -23,6 +23,7 @@
 
         @media screen and (max-width: $bp-LG) {
             flex-direction: column;
+            padding-left: 0;
         }
 
         &__item {
