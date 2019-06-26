@@ -167,9 +167,6 @@
     &__links {
         position: relative;
         background-color: #c782b7;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding: 30px 0;
         padding-left: 80px;
         z-index: 4;
@@ -183,25 +180,6 @@
         @media screen and (min-width: 1800px) {
             justify-content: flex-end;
             padding-right: 40px;
-        }
-
-        &__item {
-            font-size: 20px;
-            font-family: 'Geon Bold';
-            color: #361747;
-            @include transition();
-
-            &:hover {
-                color: $color-secondary--darken;
-            }
-
-            i.fa {
-                font-size: 35px;
-            }
-
-            @media screen and (min-width: $bp-SM) {
-                margin-right: 20px;
-            }
         }
     }
 

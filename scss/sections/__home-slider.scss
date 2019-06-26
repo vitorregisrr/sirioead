@@ -61,8 +61,20 @@
         right: 210px;
         bottom: 37px;
 
+        @media screen and (max-width: $bp-LG) {
+            bottom: 36%;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
         @media screen and (max-width: $bp-MD) {
-            bottom: 45%;
+            bottom: 40%;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        @media screen and (max-width: $bp-SM) {
+            bottom: 40%;
             right: 50%;
             transform: translateX(50%);
         }

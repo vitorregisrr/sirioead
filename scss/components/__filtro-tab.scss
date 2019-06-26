@@ -1,0 +1,97 @@
+.filtro-tab{
+    margin-bottom: 30px;
+    position: relative;
+
+    &__header{ 
+        height: 50px;
+        font-family: 'Geon Bold';
+        text-transform: uppercase;
+        width: 100%;
+        padding: 10px 15px;
+        background-color: transparent;
+        border: 1.5px solid $color-primary;
+        text-align: left;
+        position: relative;
+        color: $color-primary;
+        cursor: pointer;
+        @include transition();
+
+
+        &:focus{
+            outline: none;
+        }
+
+        &[aria-expanded="false"]{
+            font-weight: bold;
+            
+            &:after{
+                transform: rotate(0);
+            }
+        }
+
+        &:after{
+            content: '\f054';
+            font-family: FontAwesome;
+            color: $color-primary;
+            font-size: 15px;
+            position: absolute;
+            right: 40px;
+            top: 12px;
+            transform: rotate(90deg);
+            @include transition();
+        }
+        
+        &:hover{
+            background-color: $color-primary;
+            color: #fff;
+
+            &:after{
+                color: #fff;
+            }
+        }
+    }
+
+    &__content{
+        border: 1.5px solid $color-primary;
+        border-top: none;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        z-index: 3;
+        background-color: #fff;
+        overflow: hidden;
+        opacity: 0;
+        max-height: 0;
+        padding: 0;
+        @include transition();
+
+        ul{
+            padding-left: 10px;
+            
+            li{
+                margin-bottom: 10px;
+
+                a{
+                    color: black;
+                    font-size: 14px;
+                    @include transition();
+
+                    &:hover{
+                        color: $color-secondary;
+                    }
+
+                    span{
+                        font-family: 'Geon Bold';
+                    }
+                }
+            }
+        }
+
+        &.show{
+            max-height: 1000px;
+            opacity: 1;
+            padding: 20px 10px;
+        }
+    }
+}

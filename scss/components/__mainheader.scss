@@ -179,9 +179,8 @@
 
     &__portal-mobile {
         display: none;
-        background-color: #361747;
+        background-color: #95519f;
         font-family: 'Geon Bold';
-        padding-left: 40px;
         
         &__label {
             font-size: 16px;
@@ -189,14 +188,11 @@
             text-transform: uppercase;
             color: #fff;
             margin-bottom: 0;
-            padding: 10px 0;
+            margin-right: 10px;
         }
 
         &__link {
-            display: block;
-            background-color: #220930;
-            padding: 18px 50px;
-            font-size: 15px;
+            font-size: 16px;
             color: #fff;
 
             &:hover{
@@ -207,12 +203,12 @@
         @media screen and (max-width: $bp-LG) {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
         }
     }
 
     &__tools-mobile{
-        background-color: #34a5df;
+        background-color: #95519f;
         display: none;
         justify-content: space-between;
 

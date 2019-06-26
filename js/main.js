@@ -70,6 +70,13 @@
         });
     }
 
+    // Filtro tab dropdown script
+    $('.filtro-tab__header').click( function(){
+        const status = $(this).attr('aria-expanded');
+        $(this).attr('aria-expanded', status === 'false' ? true : false);
+        $(this).parent().find('.filtro-tab__content').toggleClass('show');
+    })
+
     if (window.innerWidth < 992) {
         updateAccordion();
     }

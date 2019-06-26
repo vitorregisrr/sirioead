@@ -1,0 +1,63 @@
+.noticia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    &__img {
+        height: 230px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            @include transition();
+            
+            &:hover{
+                @include scale(1.1);
+            }
+        }
+    }
+
+    &__caption {
+        padding: 10px 30px 0 0;
+
+        @media screen and (max-width: $bp-SM){
+            padding: 10px 40px;
+        }
+
+        &__date{
+            display: block;
+            font-size: 13px;
+            font-family: 'Geon Light';
+            color: #361747;
+            margin-bottom: 5px;
+        }
+
+        &__title{
+            font-family: 'Geon Bold';
+            font-size: 20px;
+            letter-spacing: 0.6px;
+            color: #361747;
+        }
+
+        &__desc{
+            font-family: 'Geon Light';
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: #361747;
+            margin-bottom: 10px;
+        }
+
+        &__link{
+            color: $color-primary;
+            font-size: 19px;
+            @include transition();
+
+            &:hover{
+                color: $color-secondary--darken;
+            }
+        }
+    }
+}
