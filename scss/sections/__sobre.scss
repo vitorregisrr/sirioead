@@ -171,6 +171,14 @@
         padding-left: 80px;
         z-index: 4;
 
+        @media screen and (min-width: $bp-LG){
+            padding-left: 140px;
+        }
+
+        @media screen and (min-width: 1500px){
+            padding-left: 240px;
+        }
+
         @media screen and (max-width: $bp-SM) {
             flex-direction: column;
             padding-left: 0;
@@ -178,6 +186,7 @@
 
 
         @media screen and (min-width: 1800px) {
+            padding-left: 30vw;
             justify-content: flex-end;
             padding-right: 40px;
         }

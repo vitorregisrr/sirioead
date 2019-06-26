@@ -3,13 +3,13 @@
     overflow: hidden;
 
     .main-container {
-    @media screen and (max-width: $bp-LG) {
+        @media screen and (max-width: $bp-LG) {
             padding: 0 !important;
             margin: 0 !important;
             max-width: none !important;
         }
 
-        @media screen and (min-width: $bp-LG) and (max-width: 1300px){
+        @media screen and (min-width: $bp-LG) and (max-width: 1300px) {
             padding: 0 100px;
         }
     }
@@ -33,7 +33,7 @@
 
             &__caption {
                 background-color: #361747;
-                opacity: .85;
+                opacity: .9;
                 width: 100%;
                 padding: 30px 0;
 
@@ -71,13 +71,13 @@
                     }
                 }
 
-                &__more{
+                &__more {
                     display: block;
                     color: $color-primary;
                     font-size: 19px;
                     @include transition();
 
-                    &:hover{
+                    &:hover {
                         color: darken($color-primary, 10)
                     }
                 }
@@ -114,17 +114,17 @@
         }
     }
 
-   
+
 
     .owl-next {
         @media screen and (min-width: $bp-LG) {
-            right: -14%  !important;
+            right: -14% !important;
         }
     }
 
     .owl-prev {
         @media screen and (min-width: $bp-LG) {
-            left: -14%  !important;
+            left: -14% !important;
         }
     }
 }
