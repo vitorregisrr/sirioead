@@ -9,6 +9,7 @@
     &__navAccordion {
         width: 100%;
         display: none;
+    
         @media screen and (max-width: $bp-LG) {
             display: block;
 
@@ -20,9 +21,7 @@
         }
 
         &__item {
-            &:not(:last-child) {
-                border-bottom: 1px solid #634872;
-            }
+            border-bottom: 1px solid #634872;
 
             &__title {
 
@@ -51,7 +50,7 @@
         width: 100vw;
         display: flex;
         flex-direction: column;
-        background-color: #361747;
+        background-color: #fff;
 
         div.owl-nav {
             top: 220px !important;

@@ -3196,7 +3196,7 @@ button, a[role="button"] {
   }
 }
 
-.curso__navAccordion__item:not(:last-child) {
+.curso__navAccordion__item {
   border-bottom: 1px solid #634872;
 }
 
@@ -3227,7 +3227,7 @@ button, a[role="button"] {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-color: #361747;
+  background-color: #fff;
 }
 
 .curso__carousel div.owl-nav {

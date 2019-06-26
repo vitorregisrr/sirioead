@@ -116,6 +116,16 @@
     <main>
         <section id="curso" class="curso">
             <div class="owl-carousel owl-default nav-center curso__carousel">
+
+                <!-- Atenção, essa página pode ser um pouco complicada pois tem muito detalhes no seu "loop". Qualquer coisa me chama. -->
+
+                <!-- O Item 1 tem um template de curso diferente do Item 2(item 1= v3 & item 2 = v2), é a versão 3 do layout. 
+                    Ou seja, possuem uma estrutrura similar, porém com classes diferentes. Be careful. Precisamos confirmar quando cada um vai ser usado.-->
+
+                <!-- Atenção no seu loop: -->
+                <!-- Tome cuidado para enumerar direito cada sufixo --cursoX, onde X é o número do curso.  -->
+                <!-- No accordion de unidades, tome cuidado para nomear direito o collapse da unidade, sendo cada referência a unidadeX, X é o número da unidade. -->
+
                 <div class="item">
                     <div class="curso__carousel__item">
                         <div class="curso__carousel__item__top">
@@ -171,8 +181,430 @@
                                 disponíveis no mercado mundial.
                             </p>
                         </div>
+
+                        <nav class="page-nav d-none d-lg-flex">
+                            <div class="container">
+                                <ul class="page-nav__list wow fadeInUp">
+                                    <li class="page-nav__list__item active"><a
+                                            href="#objetivos--curso1">Público-alvo</a></li>
+                                    <li class="page-nav__list__item"><a href="#programa--curso1">Programa</a></li>
+                                    <li class="page-nav__list__item"><a href="#perfil-aluno--curso1">Perfil do Aluno</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#objetivos--curso1">Objetivos
+                                            Pedagógicos</a></li>
+                                    <li class="page-nav__list__item"><a href="#autor--curso1">Autor</a></li>
+                                    <li class="page-nav__list__item"><a href="#investimento--curso1">Investimento</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#atendimento">Contato</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <!-- Accordion para a versão mobile, recebe todas as outras seções automaticamente com Javascript -->
+                        <div class="curso__navAccordion">
+                            <div id="cursoAccordion--curso1">
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapsepublicoAlvo">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapsepublicoAlvo"
+                                                aria-expanded="false" aria-controls="collapsepublicoAlvo">
+                                                Público-alvo
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapsepublicoAlvo" class="collapse"
+                                        aria-labelledby="#headingCollapsepublicoAlvo"
+                                        data-parent="#cursoAccordion--curso1">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#publico-alvo--curso1">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapsePrograma--curso1">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapsePrograma--curso1"
+                                                aria-expanded="false" aria-controls="collapsePrograma--curso1">
+                                                Programa
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapsePrograma--curso1" class="collapse"
+                                        aria-labelledby="#headingCollapsePrograma--curso1"
+                                        data-parent="#cursoAccordion--curso1">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#programa--curso1">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapsePerfilAluno--curso1">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapsePerfilAluno--curso1"
+                                                aria-expanded="false" aria-controls="collapsePerfilAluno--curso1">
+                                                Perfil do Aluno
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapsePerfilAluno--curso1" class="collapse"
+                                        aria-labelledby="#headingCollapsePerfilAluno--curso1"
+                                        data-parent="#cursoAccordion--curso1">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#perfil-aluno--curso1">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapseObjetivos--curso1">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseObjetivos--curso1"
+                                                aria-expanded="false" aria-controls="collapseObjetivos--curso1">
+                                                Objetivos Pedagógicos
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseObjetivos--curso1" class="collapse"
+                                        aria-labelledby="#headingCollapseObjetivos--curso1"
+                                        data-parent="#cursoAccordion--curso1">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#objetivos--curso1">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapseAutor--curso1">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseAutor--curso1"
+                                                aria-expanded="false" aria-controls="collapseAutor--curso1">
+                                                Autor
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAutor--curso1" class="collapse"
+                                        aria-labelledby="#headingCollapseAutor--curso1"
+                                        data-parent="#cursoAccordion--curso1">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#autor--curso1">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapseInvestimento--curso1">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseInvestimento--curso1"
+                                                aria-expanded="false" aria-controls="collapseInvestimento--curso1">
+                                                Investimento
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseInvestimento--curso1" class="collapse"
+                                        aria-labelledby="#headingCollapseInvestimento--curso1"
+                                        data-parent="#cursoAccordion--curso1">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#investimento--curso1">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapseAtendimento--curso1">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseAtendimento--curso1"
+                                                aria-expanded="false" aria-controls="collapseAtendimento--curso1">
+                                                Contato
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAtendimento--curso1" class="collapse"
+                                        aria-labelledby="#headingCollapseAtendimento--curso1"
+                                        data-parent="#cursoAccordion--curso1">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#atendimento--curso1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section id="publico-alvo--curso1" class="curso__publico curso__section">
+                            <div class="container">
+                                <div class="curso__publico__content">
+                                    <h3 class="inner-title color-dark mb-3">Público Alvo</h3>
+                                    <p class="inner-desc color-dark text-black">
+                                        Alunos de graduação, residentes e profissionais da saúde (médicos, enfermeiros,
+                                        nutricionistas,
+                                        psicólogos, fonoaudiólogos, fisioterapeutas, farmacêuticos, terapeutas
+                                        ocupacionais,
+                                        odontologistas, educadores físicos, gestores em saúde e demais profissões) com
+                                        interesse em
+                                        atenção primária.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="programa--curso1" class="curso__programas v3 curso__section">
+                            <div class="container">
+                                <div class="curso__programas__content">
+                                    <h3 class="inner-title wow fadeInUp">Programa</h3>
+                                    <p class="inner-desc mb-3 mb-5 wow fadeInUp d-none d-lg-block">
+                                        Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw
+                                        dpiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                                        sit.
+                                    </p>
+
+                                    <div id="unidadesAccordion--curso1">
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title"
+                                                    id="headingUnidade1---curso1">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade1--curso1"
+                                                            aria-expanded="true" aria-controls="unidade1--curso1">
+                                                            Módulo 1 - Introdução à Atenção Primária à Saúde e Medicina
+                                                            de Família
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade1--curso1" class="collapse show"
+                                                    aria-labelledby="#headingCollapseObjetivos"
+                                                    data-parent="#unidadesAccordion--curso1">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list list--disc color-dark mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title"
+                                                    id="headingUnidade2---curso1">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade2---curso1"
+                                                            aria-expanded="false" aria-controls="unidade2---curso1">
+                                                            Módulo 2 - Gestão da Clínica em Atenção Primária à Saúde
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade2---curso1" class="collapse"
+                                                    aria-labelledby="#headingUnidade2---curso1"
+                                                    data-parent="#unidadesAccordion--curso1">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title"
+                                                    id="headingUnidade3---curso1">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade3---curso1"
+                                                            aria-expanded="false" aria-controls="unidade3---curso1">
+                                                            Módulo 3 - Epidemiologia Clínica
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade3---curso1" class="collapse"
+                                                    aria-labelledby="#headingUnidade3---curso1"
+                                                    data-parent="#unidadesAccordion--curso1">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title"
+                                                    id="headingUnidade4---curso1">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade4---curso1"
+                                                            aria-expanded="false" aria-controls="unidade4---curso1">
+                                                            Módulo 4 - Registro Clínico Ambulatorial
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade4---curso1" class="collapse"
+                                                    aria-labelledby="#headingUnidade4---curso1"
+                                                    data-parent="#unidadesAccordion--curso1">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title"
+                                                    id="headingUnidade5---curso1">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade5--curso1"
+                                                            aria-expanded="false" aria-controls="unidade5--curso1">
+                                                            Módulo 5 - Comunicação em Atenção Primária à Saúde
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade5--curso1" class="collapse"
+                                                    aria-labelledby="#headingUnidade5---curso1"
+                                                    data-parent="#unidadesAccordion--curso1">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+
+                        <section id="perfil-aluno--curso1" class="curso__perfil-aluno v3 curso__section">
+                            <div class="container">
+                                <div class="curso__perfil-aluno__header">
+                                    <h3 class="inner-title">Perfil do aluno</h3>
+                                    <p class="inner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="objetivos--curso1" class="v3 curso__objetivos curso__section">
+                            <div class="container">
+                                <div class="v3 curso__objetivos__content">
+                                    <h3 class="inner-title wow fadeInUp color-dark mb-4">Objetivos Pedagógicos</h3>
+
+                                    <ul class="v3 curso__objetivos__list list--disc mb-4 wow fadeInUp">
+                                        <li><span>Identificar os princípios que regem a Atenção Primária e Saúde da
+                                                Família</span>
+                                        </li>
+                                        <li><span>Conhecer e desenvolver habilidades para a gestão da clínica de Atenção
+                                                Primária</span></li>
+                                        <li><span>Incorporar conceitos de medicina baseada em evidências e epidemiologia
+                                                clínica
+                                                para auxílio à sua atuação</span></li>
+                                        <li><span>Realizar o registro clínico ambulatorial orientado por problemas,
+                                                utilizando o
+                                                método SOAP e Codificação Internacional de Atenção Primária
+                                                (CIAP2)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="v3 curso__autores curso__section" id="autor--curso1">
+                            <div class="container">
+                                <div class="v3 curso__autores__content">
+                                    <h4 class="v3 curso__autores__title color-dark inner-title mb-1">Autor</h4>
+
+                                    <div class="v3 curso__autores__autor unico">
+                                        <h5 class="v3 curso__autores__autor__caption__name">José Benedito Ramos Valladão
+                                            Júnior
+                                        </h5>
+                                        <ul class="list--disc curso__autores__caption__list color-dark">
+                                            <li>
+                                                <span>
+                                                    Doutor pela Faculdade de Medicina da Universidade de São Paulo
+                                                    (USP);
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    Especialista em Medicina de Família e Comunidade;
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    Médico do Corpo Clínico do Hospital Sírio-Libanês;
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span>
+                                                    Autor do livro “Medicina de Família e Comunidade: Fundamentos e
+                                                    Práticas”, do Hospital Sírio-Libanês, e do livro “Medicina de
+                                                    Família e Comunidade”, da Faculdade de Medicina da Universidade de
+                                                    São Paulo (USP).
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="investimento--curso1" class="curso__investimento curso__section">
+                            <div class="container">
+                                <h3 class="inner-title color-dark wow fadeInUp mb-4">Investimento</h3>
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>R$
+                                                926,48</span></a>
+                                    </div>
+                                    <div class="col-md-2 or-col"><span class="or">ou</span></div>
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>3x
+                                                de R$
+                                                308,83</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
+
+
                 <div class="item">
                     <div class="curso__carousel__item">
                         <div class="curso__carousel__item__top">
@@ -224,6 +656,334 @@
                                 aspectos biológicos, psíquicos e sociais.
                             </p>
                         </div>
+
+                        <nav class="page-nav d-none d-lg-flex">
+                            <div class="container">
+                                <ul class="page-nav__list wow fadeInUp">
+                                    <li class="page-nav__list__item active"><a href="#objetivos--curso2">Objetivos</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#programa--curso2">Programa</a></li>
+                                    <li class="page-nav__list__item"><a href="#perfil-aluno--curso2">Perfil do Aluno</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#autores--curso2">Autores</a></li>
+                                    <li class="page-nav__list__item"><a href="#investimento--curso2">Investimento</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#atendimento">Contato</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <div class="curso__navAccordion">
+                            <div id="cursoAccordion--curso2">
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapseObjetivos--curso2">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseObjetivos--curso2"
+                                                aria-expanded="false" aria-controls="collapseObjetivos--curso2">
+                                                Objetivos
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseObjetivos--curso2" class="collapse"
+                                        aria-labelledby="#headingCollapseObjetivos--curso2"
+                                        data-parent="#cursoAccordion--curso2">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#objetivos--curso2">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapsePrograma--curso2">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapsePrograma--curso2"
+                                                aria-expanded="false" aria-controls="collapsePrograma--curso2">
+                                                Programa
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapsePrograma--curso2" class="collapse"
+                                        aria-labelledby="#headingCollapsePrograma--curso2"
+                                        data-parent="#cursoAccordion--curso2">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#programa--curso2">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapsePerfilAluno--curso2">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapsePerfilAluno--curso2"
+                                                aria-expanded="false" aria-controls="collapsePerfilAluno--curso2">
+                                                Perfil do Aluno
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapsePerfilAluno--curso2" class="collapse"
+                                        aria-labelledby="#headingCollapsePerfilAluno--curso2"
+                                        data-parent="#cursoAccordion--curso2">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#perfil-aluno--curso2">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapseAutores--curso2">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseAutores--curso2"
+                                                aria-expanded="false" aria-controls="collapseAutores--curso2">
+                                                Autores
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAutores--curso2" class="collapse"
+                                        aria-labelledby="#headingCollapseAutores--curso2"
+                                        data-parent="#cursoAccordion--curso2">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#autores--curso2">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapseInvestimento--curso2">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseInvestimento--curso2"
+                                                aria-expanded="false" aria-controls="collapseInvestimento--curso2">
+                                                Investimento
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseInvestimento--curso2" class="collapse"
+                                        aria-labelledby="#headingCollapseInvestimento2"
+                                        data-parent="#cursoAccordion--curso2">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#investimento--curso2">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapseAtendimento--curso2">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseAtendimento--curso2"
+                                                aria-expanded="false" aria-controls="collapseAtendimento--curso2">
+                                                Contato
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAtendimento--curso2" class="collapse"
+                                        aria-labelledby="#headingCollapseAtendimento--curso2"
+                                        data-parent="#cursoAccordion--curso2">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#atendimento">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion para a versão mobile, recebe todas as outras seções automaticamente com Javascript -->
+                        <section id="objetivos--curso2" class="curso__objetivos curso__section">
+                            <div class="container">
+                                <div class="curso__objetivos__content">
+                                    <h3 class="inner-title wow fadeInUp">Objetivos</h3>
+                                    <p class="inner-desc mb-3 wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw
+                                        dpiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                                        sit.
+                                    </p>
+                                    <ul class="curso__objetivos__list  list--disc mb-4 wow fadeInUp">
+                                        <li><span>Lorem ipsum dolor sit.</span></li>
+                                        <li><span>Lorem ipsum dolor sit amet consectetur.</span></li>
+                                        <li><span>Lorem ipsum dolor.</span></li>
+                                    </ul>
+                                    <p class="inner-desc text-black color-dark wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, asc a0s9ic ia0s cais
+                                        c0asi c0iaos
+                                        csed do eiusmod tempor incididunt ut labore.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="programa--curso2" class="curso__programas curso__section">
+                            <div class="container">
+                                <div class="curso__programas__content">
+                                    <h3 class="inner-title color-dark wow fadeInUp">Programa</h3>
+                                    <p class="inner-desc mb-3 color-dark mb-5 wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw
+                                        dpiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                                        sit.
+                                    </p>
+
+                                    <div id="unidadesAccordion--curso2">
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title"
+                                                    id="headingCollapse--curso2">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade1--curso2"
+                                                            aria-expanded="true" aria-controls="unidade1--curso2">
+                                                            Unidade 1 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade1" class="collapse show"
+                                                    aria-labelledby="#headingCollapse--curso2"
+                                                    data-parent="#unidadesAccordion--curso2">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list list--disc color-dark mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title" id="heading2">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade2--curso2"
+                                                            aria-expanded="false" aria-controls="unidade2--curso2">
+                                                            Unidade 2 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade2--curso2" class="collapse" aria-labelledby="#heading2"
+                                                    data-parent="#unidadesAccordion--curso2">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title" id="heading3--curso2">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade3--curso2"
+                                                            aria-expanded="false" aria-controls="unidade3--curso2">
+                                                            Unidade 3 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade3--curso2" class="collapse" aria-labelledby="#heading3"
+                                                    data-parent="#unidadesAccordion--curso2">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="perfil-autores--wraper curso__section">
+                            <section id="perfil-aluno--curso2" class="curso__perfil-aluno curso__section">
+                                <div class="container">
+                                    <div class="curso__perfil-aluno__header">
+                                        <h3 class="inner-title">Perfil do aluno</h3>
+                                        <p class="inner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.adipiscing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="curso__autores" id="autores--curso2">
+                                <div class="container">
+                                    <div class="curso__autores__content">
+                                        <h4 class="curso__autores__title inner-title">Autores</h4>
+
+                                        <div class="curso__autores__autor">
+                                            <div class="curso__autores__autor__img">
+                                                <img src="../images/thumbs/male.png" alt="">
+                                            </div>
+                                            <div class="curso__autores__autor__caption">
+                                                <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                                <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor, sit
+                                                    amet consectetur adipisicing elit. Laudantium, itaque doloremque
+                                                    possimus
+                                                    doloribus
+                                                    officia fuga earum illum quibusdam praesentium voluptates. </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__autores__autor">
+                                            <div class="curso__autores__autor__img">
+                                                <img src="../images/thumbs/male.png" alt="">
+                                            </div>
+                                            <div class="curso__autores__autor__caption">
+                                                <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                                <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor, sit
+                                                    amet consectetur adipisicing elit. Laudantium, itaque doloremque
+                                                    possimus
+                                                    doloribus
+                                                    officia fuga earum illum quibusdam praesentium voluptates. </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__autores__autor unico">
+                                            <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                            <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Qui amet culpa repellendus, atque beatae
+                                                ducimus iure
+                                                odio
+                                                quidem libero eveniet? </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <section id="investimento--curso2" class="curso__investimento curso__section">
+                            <div class="container">
+                                <h3 class="inner-title color-dark wow fadeInUp mb-4">Investimento</h3>
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>R$
+                                                926,48</span></a>
+                                    </div>
+                                    <div class="col-md-2 or-col"><span class="or">ou</span></div>
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>3x
+                                                de R$
+                                                308,83</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
                 <div class="item">
@@ -275,6 +1035,333 @@
                                 pacientes e o aproveitamento dos recursos de saúde.
                             </p>
                         </div>
+                        <nav class="page-nav d-none d-lg-flex">
+                            <div class="container">
+                                <ul class="page-nav__list wow fadeInUp">
+                                    <li class="page-nav__list__item active"><a href="#objetivos--curso2">Objetivos</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#programa--curso2">Programa</a></li>
+                                    <li class="page-nav__list__item"><a href="#perfil-aluno--curso2">Perfil do Aluno</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#autores--curso2">Autores</a></li>
+                                    <li class="page-nav__list__item"><a href="#investimento--curso2">Investimento</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#atendimento">Contato</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <div class="curso__navAccordion">
+                            <div id="cursoAccordion--curso3">
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapseObjetivos--curso3">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseObjetivos--curso3"
+                                                aria-expanded="false" aria-controls="collapseObjetivos--curso3">
+                                                Objetivos
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseObjetivos--curso3" class="collapse"
+                                        aria-labelledby="#headingCollapseObjetivos--curso3"
+                                        data-parent="#cursoAccordion--curso3">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#objetivos--curso3">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapsePrograma--curso3">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapsePrograma--curso3"
+                                                aria-expanded="false" aria-controls="collapsePrograma--curso3">
+                                                Programa
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapsePrograma--curso3" class="collapse"
+                                        aria-labelledby="#headingCollapsePrograma--curso3"
+                                        data-parent="#cursoAccordion--curso3">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#programa--curso3">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapsePerfilAluno--curso3">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapsePerfilAluno--curso3"
+                                                aria-expanded="false" aria-controls="collapsePerfilAluno--curso3">
+                                                Perfil do Aluno
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapsePerfilAluno--curso3" class="collapse"
+                                        aria-labelledby="#headingCollapsePerfilAluno--curso3"
+                                        data-parent="#cursoAccordion--curso3">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#perfil-aluno--curso3">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapseAutores--curso3">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseAutores--curso3"
+                                                aria-expanded="false" aria-controls="collapseAutores--curso3">
+                                                Autores
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAutores--curso3" class="collapse"
+                                        aria-labelledby="#headingCollapseAutores--curso3"
+                                        data-parent="#cursoAccordion--curso3">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#autores--curso3">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapseInvestimento--curso3">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseInvestimento--curso3"
+                                                aria-expanded="false" aria-controls="collapseInvestimento--curso3">
+                                                Investimento
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseInvestimento--curso3" class="collapse"
+                                        aria-labelledby="#headingCollapseInvestimento2"
+                                        data-parent="#cursoAccordion--curso3">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#investimento--curso3">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapseAtendimento--curso3">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseAtendimento--curso3"
+                                                aria-expanded="false" aria-controls="collapseAtendimento--curso3">
+                                                Contato
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAtendimento--curso3" class="collapse"
+                                        aria-labelledby="#headingCollapseAtendimento--curso3"
+                                        data-parent="#cursoAccordion--curso3">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#atendimento">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion para a versão mobile, recebe todas as outras seções automaticamente com Javascript -->
+                        <section id="objetivos--curso3" class="curso__objetivos curso__section">
+                            <div class="container">
+                                <div class="curso__objetivos__content">
+                                    <h3 class="inner-title wow fadeInUp">Objetivos</h3>
+                                    <p class="inner-desc mb-3 wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw
+                                        dpiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                                        sit.
+                                    </p>
+                                    <ul class="curso__objetivos__list  list--disc mb-4 wow fadeInUp">
+                                        <li><span>Lorem ipsum dolor sit.</span></li>
+                                        <li><span>Lorem ipsum dolor sit amet consectetur.</span></li>
+                                        <li><span>Lorem ipsum dolor.</span></li>
+                                    </ul>
+                                    <p class="inner-desc text-black color-dark wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, asc a0s9ic ia0s cais
+                                        c0asi c0iaos
+                                        csed do eiusmod tempor incididunt ut labore.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="programa--curso3" class="curso__programas curso__section">
+                            <div class="container">
+                                <div class="curso__programas__content">
+                                    <h3 class="inner-title color-dark wow fadeInUp">Programa</h3>
+                                    <p class="inner-desc mb-3 color-dark mb-5 wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw
+                                        dpiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                                        sit.
+                                    </p>
+
+                                    <div id="unidadesAccordion--curso3">
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title"
+                                                    id="headingCollapse--curso3">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade1--curso3"
+                                                            aria-expanded="true" aria-controls="unidade1--curso3">
+                                                            Unidade 1 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade1" class="collapse show"
+                                                    aria-labelledby="#headingCollapse--curso3"
+                                                    data-parent="#unidadesAccordion--curso3">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list list--disc color-dark mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title" id="heading2">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade2--curso3"
+                                                            aria-expanded="false" aria-controls="unidade2--curso3">
+                                                            Unidade 2 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade2--curso3" class="collapse" aria-labelledby="#heading2"
+                                                    data-parent="#unidadesAccordion--curso3">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title" id="heading3--curso3">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade3--curso3"
+                                                            aria-expanded="false" aria-controls="unidade3--curso3">
+                                                            Unidade 3 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade3--curso3" class="collapse" aria-labelledby="#heading3"
+                                                    data-parent="#unidadesAccordion--curso3">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="perfil-autores--wraper curso__section">
+                            <section id="perfil-aluno--curso3" class="curso__perfil-aluno curso__section">
+                                <div class="container">
+                                    <div class="curso__perfil-aluno__header">
+                                        <h3 class="inner-title">Perfil do aluno</h3>
+                                        <p class="inner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.adipiscing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="curso__autores" id="autores--curso3">
+                                <div class="container">
+                                    <div class="curso__autores__content">
+                                        <h4 class="curso__autores__title inner-title">Autores</h4>
+
+                                        <div class="curso__autores__autor">
+                                            <div class="curso__autores__autor__img">
+                                                <img src="../images/thumbs/male.png" alt="">
+                                            </div>
+                                            <div class="curso__autores__autor__caption">
+                                                <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                                <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor, sit
+                                                    amet consectetur adipisicing elit. Laudantium, itaque doloremque
+                                                    possimus
+                                                    doloribus
+                                                    officia fuga earum illum quibusdam praesentium voluptates. </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__autores__autor">
+                                            <div class="curso__autores__autor__img">
+                                                <img src="../images/thumbs/male.png" alt="">
+                                            </div>
+                                            <div class="curso__autores__autor__caption">
+                                                <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                                <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor, sit
+                                                    amet consectetur adipisicing elit. Laudantium, itaque doloremque
+                                                    possimus
+                                                    doloribus
+                                                    officia fuga earum illum quibusdam praesentium voluptates. </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__autores__autor unico">
+                                            <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                            <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Qui amet culpa repellendus, atque beatae
+                                                ducimus iure
+                                                odio
+                                                quidem libero eveniet? </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <section id="investimento--curso3" class="curso__investimento curso__section">
+                            <div class="container">
+                                <h3 class="inner-title color-dark wow fadeInUp mb-4">Investimento</h3>
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>R$
+                                                926,48</span></a>
+                                    </div>
+                                    <div class="col-md-2 or-col"><span class="or">ou</span></div>
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>3x
+                                                de R$
+                                                308,83</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
                 <div class="item">
@@ -328,308 +1415,337 @@
                                 e maior sustentabilidade ao setor de saúde.
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <nav class="page-nav d-none d-lg-flex">
-                <div class="container">
-                    <ul class="page-nav__list wow fadeInUp">
-                        <li class="page-nav__list__item active"><a href="#objetivos">Objetivos</a></li>
-                        <li class="page-nav__list__item"><a href="#programa">Programa</a></li>
-                        <li class="page-nav__list__item"><a href="#perfil-aluno">Perfil do Aluno</a></li>
-                        <li class="page-nav__list__item"><a href="#autores">Autores</a></li>
-                        <li class="page-nav__list__item"><a href="#investimento">Investimento</a></li>
-                        <li class="page-nav__list__item"><a href="#atendimento">Contato</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="curso__navAccordion">
-                <div id="cursoAccordion">
-
-                    <div class="curso__navAccordion__item">
-                        <div class="curso__navAccordion__item__title" id="headingCollapseObjetivos">
-                            <h5 class="mb-0">
-                                <button data-toggle="collapse" data-target="#collapseObjetivos" aria-expanded="false"
-                                    aria-controls="collapseObjetivos">
-                                    Objetivos
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseObjetivos" class="collapse" aria-labelledby="#headingCollapseObjetivos"
-                            data-parent="#cursoAccordion">
-                            <div class="curso__navAccordion__content" data-cursoContent="#objetivos">
-
+                        <nav class="page-nav d-none d-lg-flex">
+                            <div class="container">
+                                <ul class="page-nav__list wow fadeInUp">
+                                    <li class="page-nav__list__item active"><a href="#objetivos--curso4">Objetivos</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#programa--curso4">Programa</a></li>
+                                    <li class="page-nav__list__item"><a href="#perfil-aluno--curso4">Perfil do Aluno</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#autores--curso4">Autores</a></li>
+                                    <li class="page-nav__list__item"><a href="#investimento--curso4">Investimento</a>
+                                    </li>
+                                    <li class="page-nav__list__item"><a href="#atendimento">Contato</a></li>
+                                </ul>
                             </div>
-                        </div>
-                    </div>
+                        </nav>
 
-                    <div class="curso__navAccordion__item">
-                        <div class="curso__navAccordion__item__title" id="headingCollapsePrograma">
-                            <h5 class="mb-0">
-                                <button data-toggle="collapse" data-target="#collapsePrograma" aria-expanded="false"
-                                    aria-controls="collapsePrograma">
-                                    Programa
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapsePrograma" class="collapse" aria-labelledby="#headingCollapsePrograma"
-                            data-parent="#cursoAccordion">
-                            <div class="curso__navAccordion__content" data-cursoContent="#programa">
+                        <div class="curso__navAccordion">
+                            <div id="cursoAccordion--curso4">
 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="curso__navAccordion__item">
-                        <div class="curso__navAccordion__item__title" id="headingCollapsePerfilAluno">
-                            <h5 class="mb-0">
-                                <button data-toggle="collapse" data-target="#collapsePerfilAluno" aria-expanded="false"
-                                    aria-controls="collapsePerfilAluno">
-                                    Perfil do Aluno
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapsePerfilAluno" class="collapse" aria-labelledby="#headingCollapsePerfilAluno"
-                            data-parent="#cursoAccordion">
-                            <div class="curso__navAccordion__content" data-cursoContent="#perfil-aluno">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="curso__navAccordion__item">
-                        <div class="curso__navAccordion__item__title" id="headingCollapseAutores">
-                            <h5 class="mb-0">
-                                <button data-toggle="collapse" data-target="#collapseAutores" aria-expanded="false"
-                                    aria-controls="collapseAutores">
-                                    Autores
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseAutores" class="collapse" aria-labelledby="#headingCollapseAutores"
-                            data-parent="#cursoAccordion">
-                            <div class="curso__navAccordion__content" data-cursoContent="#autores">
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="curso__navAccordion__item">
-                        <div class="curso__navAccordion__item__title" id="headingCollapseInvestimento">
-                            <h5 class="mb-0">
-                                <button data-toggle="collapse" data-target="#collapseInvestimento" aria-expanded="false"
-                                    aria-controls="collapseInvestimento">
-                                    Investimento
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseInvestimento" class="collapse" aria-labelledby="#headingCollapseInvestimento"
-                            data-parent="#cursoAccordion">
-                            <div class="curso__navAccordion__content" data-cursoContent="#investimento">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="curso__navAccordion__item">
-                        <div class="curso__navAccordion__item__title" id="headingCollapseAtendimento">
-                            <h5 class="mb-0">
-                                <button data-toggle="collapse" data-target="#collapseAtendimento" aria-expanded="false"
-                                    aria-controls="collapseAtendimento">
-                                    Contato
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseAtendimento" class="collapse" aria-labelledby="#headingCollapseAtendimento"
-                            data-parent="#cursoAccordion">
-                            <div class="curso__navAccordion__content" data-cursoContent="#atendimento">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Accordion para a versão mobile, recebe todas as outras seções automaticamente com Javascript -->
-            <section id="objetivos" class="curso__objetivos curso__section">
-                <div class="container">
-                    <div class="curso__objetivos__content">
-                        <h3 class="inner-title wow fadeInUp">Objetivos</h3>
-                        <p class="inner-desc mb-3 wow fadeInUp">
-                            Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw dpiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit.
-                        </p>
-                        <ul class="curso__objetivos__list  list--disc mb-4 wow fadeInUp">
-                            <li><span>Lorem ipsum dolor sit.</span></li>
-                            <li><span>Lorem ipsum dolor sit amet consectetur.</span></li>
-                            <li><span>Lorem ipsum dolor.</span></li>
-                        </ul>
-                        <p class="inner-desc text-black color-dark wow fadeInUp">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, asc a0s9ic ia0s cais c0asi c0iaos
-                            csed do eiusmod tempor incididunt ut labore.
-
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="programa" class="curso__programas curso__section">
-                <div class="container">
-                    <div class="curso__programas__content">
-                        <h3 class="inner-title color-dark wow fadeInUp">Programa</h3>
-                        <p class="inner-desc mb-3 color-dark mb-5 wow fadeInUp">
-                            Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw dpiscing elit, sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit.
-                        </p>
-
-                        <div id="unidadesAccordion">
-                            <div class="curso__programas__unidade wow fadeInUp">
-                                <div class="container">
-                                    <div class="curso__programas__unidade__title" id="headingCollapseObjetivos">
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapseObjetivos--curso4">
                                         <h5 class="mb-0">
-                                            <button data-toggle="collapse" data-target="#unidade1" aria-expanded="true"
-                                                aria-controls="unidade1">
-                                                Unidade 1 - Lorem ipsum, dolores.
+                                            <button data-toggle="collapse" data-target="#collapseObjetivos--curso4"
+                                                aria-expanded="false" aria-controls="collapseObjetivos--curso4">
+                                                Objetivos
                                             </button>
                                         </h5>
                                     </div>
+                                    <div id="collapseObjetivos--curso4" class="collapse"
+                                        aria-labelledby="#headingCollapseObjetivos--curso4"
+                                        data-parent="#cursoAccordion--curso4">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#objetivos--curso4">
 
-                                    <div id="unidade1" class="collapse show" aria-labelledby="#headingCollapseObjetivos"
-                                        data-parent="#unidadesAccordion">
-                                        <div class="curso__programas__unidade__content">
-                                            <ul class="curso__programas__list list--disc color-dark mb-4">
-                                                <li><span>Lorem ipsum dolor sit.</span></li>
-                                                <li><span>Lorem ipsum dolor sit amet consectetur.</span></li>
-                                                <li><span>Lorem ipsum dolor.</span></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="curso__programas__unidade wow fadeInUp">
-                                <div class="container">
-                                    <div class="curso__programas__unidade__title" id="heading2">
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapsePrograma--curso4">
                                         <h5 class="mb-0">
-                                            <button data-toggle="collapse" data-target="#unidade2" aria-expanded="false"
-                                                aria-controls="unidade2">
-                                                Unidade 2 - Lorem ipsum, dolores.
+                                            <button data-toggle="collapse" data-target="#collapsePrograma--curso4"
+                                                aria-expanded="false" aria-controls="collapsePrograma--curso4">
+                                                Programa
                                             </button>
                                         </h5>
                                     </div>
+                                    <div id="collapsePrograma--curso4" class="collapse"
+                                        aria-labelledby="#headingCollapsePrograma--curso4"
+                                        data-parent="#cursoAccordion--curso4">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#programa--curso4">
 
-                                    <div id="unidade2" class="collapse" aria-labelledby="#heading2"
-                                        data-parent="#unidadesAccordion">
-                                        <div class="curso__programas__unidade__content">
-                                            <ul class="curso__programas__list  list--disc color-dark  mb-4">
-                                                <li><span>Lorem ipsum dolor sit.</span></li>
-                                                <li><span>Lorem ipsum dolor sit amet consectetur.</span></li>
-                                                <li><span>Lorem ipsum dolor.</span></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="curso__programas__unidade wow fadeInUp">
-                                <div class="container">
-                                    <div class="curso__programas__unidade__title" id="heading3">
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapsePerfilAluno--curso4">
                                         <h5 class="mb-0">
-                                            <button data-toggle="collapse" data-target="#unidade3" aria-expanded="false"
-                                                aria-controls="unidade3">
-                                                Unidade 3 - Lorem ipsum, dolores.
+                                            <button data-toggle="collapse" data-target="#collapsePerfilAluno--curso4"
+                                                aria-expanded="false" aria-controls="collapsePerfilAluno--curso4">
+                                                Perfil do Aluno
                                             </button>
                                         </h5>
                                     </div>
+                                    <div id="collapsePerfilAluno--curso4" class="collapse"
+                                        aria-labelledby="#headingCollapsePerfilAluno--curso4"
+                                        data-parent="#cursoAccordion--curso4">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#perfil-aluno--curso4">
 
-                                    <div id="unidade3" class="collapse" aria-labelledby="#heading3"
-                                        data-parent="#unidadesAccordion">
-                                        <div class="curso__programas__unidade__content">
-                                            <ul class="curso__programas__list  list--disc color-dark  mb-4">
-                                                <li><span>Lorem ipsum dolor sit.</span></li>
-                                                <li><span>Lorem ipsum dolor sit amet consectetur.</span></li>
-                                                <li><span>Lorem ipsum dolor.</span></li>
-                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title" id="headingCollapseAutores--curso4">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseAutores--curso4"
+                                                aria-expanded="false" aria-controls="collapseAutores--curso4">
+                                                Autores
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAutores--curso4" class="collapse"
+                                        aria-labelledby="#headingCollapseAutores--curso4"
+                                        data-parent="#cursoAccordion--curso4">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#autores--curso4">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapseInvestimento--curso4">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseInvestimento--curso4"
+                                                aria-expanded="false" aria-controls="collapseInvestimento--curso4">
+                                                Investimento
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseInvestimento--curso4" class="collapse"
+                                        aria-labelledby="#headingCollapseInvestimento2"
+                                        data-parent="#cursoAccordion--curso4">
+                                        <div class="curso__navAccordion__content"
+                                            data-cursoContent="#investimento--curso4">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="curso__navAccordion__item">
+                                    <div class="curso__navAccordion__item__title"
+                                        id="headingCollapseAtendimento--curso4">
+                                        <h5 class="mb-0">
+                                            <button data-toggle="collapse" data-target="#collapseAtendimento--curso4"
+                                                aria-expanded="false" aria-controls="collapseAtendimento--curso4">
+                                                Contato
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseAtendimento--curso4" class="collapse"
+                                        aria-labelledby="#headingCollapseAtendimento--curso4"
+                                        data-parent="#cursoAccordion--curso4">
+                                        <div class="curso__navAccordion__content" data-cursoContent="#atendimento">
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Accordion para a versão mobile, recebe todas as outras seções automaticamente com Javascript -->
+                        <section id="objetivos--curso4" class="curso__objetivos curso__section">
+                            <div class="container">
+                                <div class="curso__objetivos__content">
+                                    <h3 class="inner-title wow fadeInUp">Objetivos</h3>
+                                    <p class="inner-desc mb-3 wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw
+                                        dpiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                                        sit.
+                                    </p>
+                                    <ul class="curso__objetivos__list  list--disc mb-4 wow fadeInUp">
+                                        <li><span>Lorem ipsum dolor sit.</span></li>
+                                        <li><span>Lorem ipsum dolor sit amet consectetur.</span></li>
+                                        <li><span>Lorem ipsum dolor.</span></li>
+                                    </ul>
+                                    <p class="inner-desc text-black color-dark wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, asc a0s9ic ia0s cais
+                                        c0asi c0iaos
+                                        csed do eiusmod tempor incididunt ut labore.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="programa--curso4" class="curso__programas curso__section">
+                            <div class="container">
+                                <div class="curso__programas__content">
+                                    <h3 class="inner-title color-dark wow fadeInUp">Programa</h3>
+                                    <p class="inner-desc mb-3 color-dark mb-5 wow fadeInUp">
+                                        Lorem ipsum dolor sit amet, consectetur adi 8ywuhds yuw dwq d8i qw9d 9qw
+                                        dpiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                                        sit.
+                                    </p>
+
+                                    <div id="unidadesAccordion--curso4">
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title"
+                                                    id="headingCollapse--curso4">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade1--curso4"
+                                                            aria-expanded="true" aria-controls="unidade1--curso4">
+                                                            Unidade 1 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade1" class="collapse show"
+                                                    aria-labelledby="#headingCollapse--curso4"
+                                                    data-parent="#unidadesAccordion--curso4">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list list--disc color-dark mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title" id="heading2">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade2--curso4"
+                                                            aria-expanded="false" aria-controls="unidade2--curso4">
+                                                            Unidade 2 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade2--curso4" class="collapse" aria-labelledby="#heading2"
+                                                    data-parent="#unidadesAccordion--curso4">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__programas__unidade wow fadeInUp">
+                                            <div class="container">
+                                                <div class="curso__programas__unidade__title" id="heading3--curso4">
+                                                    <h5 class="mb-0">
+                                                        <button data-toggle="collapse" data-target="#unidade3--curso4"
+                                                            aria-expanded="false" aria-controls="unidade3--curso4">
+                                                            Unidade 3 - Lorem ipsum, dolores.
+                                                        </button>
+                                                    </h5>
+                                                </div>
+
+                                                <div id="unidade3--curso4" class="collapse" aria-labelledby="#heading3"
+                                                    data-parent="#unidadesAccordion--curso4">
+                                                    <div class="curso__programas__unidade__content">
+                                                        <ul class="curso__programas__list  list--disc color-dark  mb-4">
+                                                            <li><span>Lorem ipsum dolor sit.</span></li>
+                                                            <li><span>Lorem ipsum dolor sit amet consectetur.</span>
+                                                            </li>
+                                                            <li><span>Lorem ipsum dolor.</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="perfil-autores--wraper curso__section">
+                            <section id="perfil-aluno--curso4" class="curso__perfil-aluno curso__section">
+                                <div class="container">
+                                    <div class="curso__perfil-aluno__header">
+                                        <h3 class="inner-title">Perfil do aluno</h3>
+                                        <p class="inner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.adipiscing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="curso__autores" id="autores--curso4">
+                                <div class="container">
+                                    <div class="curso__autores__content">
+                                        <h4 class="curso__autores__title inner-title">Autores</h4>
+
+                                        <div class="curso__autores__autor">
+                                            <div class="curso__autores__autor__img">
+                                                <img src="../images/thumbs/male.png" alt="">
+                                            </div>
+                                            <div class="curso__autores__autor__caption">
+                                                <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                                <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor, sit
+                                                    amet consectetur adipisicing elit. Laudantium, itaque doloremque
+                                                    possimus
+                                                    doloribus
+                                                    officia fuga earum illum quibusdam praesentium voluptates. </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__autores__autor">
+                                            <div class="curso__autores__autor__img">
+                                                <img src="../images/thumbs/male.png" alt="">
+                                            </div>
+                                            <div class="curso__autores__autor__caption">
+                                                <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                                <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor, sit
+                                                    amet consectetur adipisicing elit. Laudantium, itaque doloremque
+                                                    possimus
+                                                    doloribus
+                                                    officia fuga earum illum quibusdam praesentium voluptates. </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="curso__autores__autor unico">
+                                            <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
+                                            <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Qui amet culpa repellendus, atque beatae
+                                                ducimus iure
+                                                odio
+                                                quidem libero eveniet? </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <section id="investimento--curso4" class="curso__investimento curso__section">
+                            <div class="container">
+                                <h3 class="inner-title color-dark wow fadeInUp mb-4">Investimento</h3>
+                                <div class="row">
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>R$
+                                                926,48</span></a>
+                                    </div>
+                                    <div class="col-md-2 or-col"><span class="or">ou</span></div>
+                                    <div class="col-md-5 d-flex justify-content-center">
+                                        <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>3x
+                                                de R$
+                                                308,83</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
-            </section>
-            <div class="perfil-autores--wraper curso__section">
-                <section id="perfil-aluno" class="curso__perfil-aluno curso__section">
-                    <div class="container">
-                        <div class="curso__perfil-aluno__header">
-                            <h3 class="inner-title">Perfil do aluno</h3>
-                            <p class="inner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.adipiscing elit.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="curso__autores" id="autores">
-                    <div class="container">
-                        <div class="curso__autores__content">
-                            <h4 class="curso__autores__title inner-title">Autores</h4>
-
-                            <div class="curso__autores__autor">
-                                <div class="curso__autores__autor__img">
-                                    <img src="../images/thumbs/male.png" alt="">
-                                </div>
-                                <div class="curso__autores__autor__caption">
-                                    <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
-                                    <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor, sit
-                                        amet consectetur adipisicing elit. Laudantium, itaque doloremque possimus
-                                        doloribus
-                                        officia fuga earum illum quibusdam praesentium voluptates. </p>
-                                </div>
-                            </div>
-
-                            <div class="curso__autores__autor">
-                                <div class="curso__autores__autor__img">
-                                    <img src="../images/thumbs/male.png" alt="">
-                                </div>
-                                <div class="curso__autores__autor__caption">
-                                    <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
-                                    <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor, sit
-                                        amet consectetur adipisicing elit. Laudantium, itaque doloremque possimus
-                                        doloribus
-                                        officia fuga earum illum quibusdam praesentium voluptates. </p>
-                                </div>
-                            </div>
-
-                            <div class="curso__autores__autor unico">
-                                <h5 class="curso__autores__autor__caption__name">Nome do autor(a)</h5>
-                                <p class="curso__autores__autor__caption__desc"> Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Qui amet culpa repellendus, atque beatae ducimus iure
-                                    odio
-                                    quidem libero eveniet? </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
-            <section id="investimento" class="curso__investimento curso__section">
-                <div class="container">
-                    <h3 class="inner-title color-dark wow fadeInUp mb-4">Investimento</h3>
-                    <div class="row">
-                        <div class="col-md-5 d-flex justify-content-center">
-                            <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>R$
-                                    926,48</span></a>
-                        </div>
-                        <div class="col-md-2 or-col"><span class="or">ou</span></div>
-                        <div class="col-md-5 d-flex justify-content-center">
-                            <a href="#atendimento" class="curso__investimento__item wow fadeInUp"><span>3x de R$
-                                    308,83</span></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <section id="atendimento" class="atendimento curso__section">
                 <div class="row">
                     <div class="col-lg-5 p-0">
@@ -663,7 +1779,8 @@
                     </div>
                     <div class="col-lg-7 p-0">
                         <div class="atendimento__form blue">
-                            <h5 class="atendimento__form__subtitle wow fadeInUp">Os campos assinalados com * são
+                            <h5 class="atendimento__form__subtitle wow fadeInUp">Os campos assinalados com *
+                                são
                                 obrigatórios.</h5>
 
                             <div class="wow fadeInUp">
@@ -733,10 +1850,10 @@
 
             <section class="links-list pink wow fadeInUp">
                 <div class="container">
-                    <a class="links-list__item" href="#"><i class="icon-question mr-2"
-                            aria-hidden="true"></i>Perguntas frequentes</a>
-                    <a class="links-list__item" href="#"><i class="fa fa-map-marker mr-2"
-                            aria-hidden="true"></i>Cursos Presenciais</a>
+                    <a class="links-list__item" href="#"><i class="icon-question mr-2" aria-hidden="true"></i>Perguntas
+                        frequentes</a>
+                    <a class="links-list__item" href="#"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>Cursos
+                        Presenciais</a>
                 </div>
             </section>
         </section>
