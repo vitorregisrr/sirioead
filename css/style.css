@@ -1170,8 +1170,9 @@ button, a[role="button"] {
     transition: all 0.3s ease-in-out;
   }
   .main-nav.active {
+    border-top: none;
     max-height: 2000px;
-    padding: 30px 0;
+    padding: 10px 0;
   }
 }
 
@@ -2935,12 +2936,18 @@ button, a[role="button"] {
 }
 
 .noticias__carousel__item__caption__more {
+  display: block;
   color: #018fd7;
   font-size: 19px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .noticias__carousel__item__caption__more:hover {
-  color: #581e69;
+  color: #016da4;
 }
 
 @media screen and (min-width: 992px) {

@@ -72,11 +72,13 @@
                 }
 
                 &__more{
+                    display: block;
                     color: $color-primary;
                     font-size: 19px;
+                    @include transition();
 
                     &:hover{
-                        color: $color-secondary--darken;
+                        color: darken($color-primary, 10)
                     }
                 }
             }
