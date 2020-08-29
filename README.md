@@ -1,7 +1,6 @@
-# Institucional WEBSITE for Sírio Libanês EAD (front only)
+# Sírio Libanês EAD
 
-
-### [Clique para acessar uma prévia estática no GHPages!](https://vitorregisrr.github.io/sirioead/pages)  
+##[Clique para acessar uma prévia estática no GHPages!](https://vitorregisrr.github.io/sirioead/pages)  
 
 ## How to run this project locally
 
